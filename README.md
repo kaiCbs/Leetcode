@@ -9,6 +9,7 @@
   - [Dynamic programming](#dynamic-programming)
   - [Two pointers](#two-pointers)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
+    - [27. Remove Element](#27-remove-element)
 
 <!-- /TOC -->
 # Problems 
@@ -54,4 +55,18 @@ class Solution:
                 
         return result+1
 ```
-The tricky point is we need to remove the duplicates in-place, thus we need two pointers, one iterate the list, the other records unique number's index. 
+The tricky point is we need to remove the duplicates **in-place**, thus we need two pointers, one iterate the list, the other records unique number's index. 
+
+
+### [27. Remove Element](https://leetcode.com/problems/remove-element/description/)
+```
+class Solution:
+    def removeElement(self, nums: List[int], val: int) -> int:
+        idx = 0;
+        for i in nums:
+            if i!=val:
+                nums[idx] = i
+                idx+=1
+        return idx
+```
+Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just resort the order, drag valid number to the head
