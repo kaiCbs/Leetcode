@@ -12,6 +12,8 @@
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
     - [278. First Bad Version](#278-first-bad-version)
+  - [Greedy](#greedy)
+    - [55. Jump Game](#55-jump-game)
 
 <!-- /TOC -->
 # Problems 
@@ -92,3 +94,24 @@ class Solution:
             return Solution.firstBadVersion(self,n,mid)
 ```
 
+## Greedy
+### [55. Jump Game](https://leetcode.com/problems/jump-game/)
+
+```
+class Solution(object):
+    def canJump(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: bool
+        """
+        if not nums:
+            return true
+        des = len(nums)-1
+        nowMax = nums[0]
+        nowId = 0
+        while (nowMax<des) & (nowId < nowMax):
+            nowId += 1
+            if nowMax < nowId + nums[nowId]:
+                nowMax = nowId + nums[nowId]
+        return (nowMax>=des)           
+```
