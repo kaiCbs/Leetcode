@@ -1,6 +1,6 @@
-[TOC]
-# leetcod
 
+# leetcod
+<!-- TOC -->autoauto- [leetcod](#leetcod)auto    - [Algoritme](#algoritme)autoauto<!-- /TOC -->
 ## Algoritme 
 ```
 for in range(1)
