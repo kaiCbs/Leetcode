@@ -7,6 +7,8 @@
   - [Data structure](#data-structure)
     - [2. Add Two Numbers](#2-add-two-numbers)
   - [Dynamic programming](#dynamic-programming)
+    - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
+    - [120. Triangle](#120-triangle)
   - [Two pointers](#two-pointers)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
@@ -38,6 +40,29 @@ class Solution:
 ```     
 
 ## Dynamic programming
+
+### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
+
+
+### [120. Triangle](https://leetcode.com/problems/triangle/)
+```
+class Solution(object):
+    def minimumTotal(self, triangle):
+        """
+        :type triangle: List[List[int]]
+        :rtype: int
+        """
+        last = []
+        for row in triangle:
+            if last:
+                row[0] += last[0]
+                row[-1] += last[-1]
+            for i in range(len(last)-1):
+                row[i+1] = min(row[i+1]+last[i],row[i+1]+last[i+1])
+            last = row
+        return min(last)
+```
+Time complexity $o(n^2)$
 
 
 ## Two pointers
