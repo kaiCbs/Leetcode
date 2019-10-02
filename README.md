@@ -10,6 +10,8 @@
   - [Two pointers](#two-pointers)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
+  - [Binary Search](#binary-search)
+    - [278. First Bad Version](#278-first-bad-version)
 
 <!-- /TOC -->
 # Problems 
@@ -69,4 +71,24 @@ class Solution:
                 idx+=1
         return idx
 ```
-Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just resort the order, drag valid number to the head
+Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate the list, drag valid number to the head.
+
+## Binary Search
+
+### [278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
+```
+class Solution:
+    def firstBadVersion(self, n, m=0):
+        """
+        :type n: int
+        :rtype: int
+        """
+        if n==m+1:
+            return n
+        mid = (m+n)//2
+        if isBadVersion(mid):
+            return Solution.firstBadVersion(self,mid,m)
+        else:
+            return Solution.firstBadVersion(self,n,mid)
+```
+
