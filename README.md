@@ -3,9 +3,12 @@
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
-- [Problems](#problems)
-  - [Data structure](#data-structure)
+- [Data structure](#data-structure)
+  - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
+  - [Binary tree](#binary-tree)
+    - [938. Range Sum of BST](#938-range-sum-of-bst)
+- [Topics](#topics)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [120. Triangle](#120-triangle)
@@ -15,7 +18,6 @@
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
     - [278. First Bad Version](#278-first-bad-version)
-    - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Greedy](#greedy)
     - [55. Jump Game](#55-jump-game)
   - [Bit Manipulation](#bit-manipulation)
@@ -25,8 +27,9 @@
     - [Binary Search Tree](#binary-search-tree)
 
 <!-- /TOC -->
-# Problems 
-## Data structure
+
+# Data structure
+## Linkedlist
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 ```
 class Solution:
@@ -45,7 +48,16 @@ class Solution:
         result.next = nextValue
         return result
 ```     
+## Binary tree
+### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
+```
+def
+```
+Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
+
+
+# Topics
 ## Dynamic programming
 
 ### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -153,14 +165,6 @@ class Solution:
         else:
             return Solution.firstBadVersion(self,n,mid)
 ```
-
-### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
-
-```
-def
-```
-Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
-
 
 ## Greedy
 ### [55. Jump Game](https://leetcode.com/problems/jump-game/)
