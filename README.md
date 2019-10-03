@@ -298,7 +298,7 @@ class Solution(object):
             r^=i
         return r
 ```
-use "^" (Caret)
+use "^" (Caret), XOR operator
 
 
 
