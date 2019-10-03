@@ -10,12 +10,15 @@
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [120. Triangle](#120-triangle)
   - [Two pointers](#two-pointers)
+    - [15. 3Sum](#15-3sum)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
     - [278. First Bad Version](#278-first-bad-version)
   - [Greedy](#greedy)
     - [55. Jump Game](#55-jump-game)
+  - [Bit Manipulation](#bit-manipulation)
+    - [136. Single Number](#136-single-number)
 
 <!-- /TOC -->
 # Problems 
@@ -62,10 +65,38 @@ class Solution(object):
             last = row
         return min(last)
 ```
-Time complexity $o(n^2)$
+Time complexity o(n^2)
 
 
 ## Two pointers
+
+### [15. 3Sum](https://leetcode.com/problems/3sum/)
+
+```
+class Solution(object):
+    def threeSum(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: List[List[int]]
+        """
+        n, result = len(nums), set()
+        nums.sort()
+        for i in range(n-2):
+            l, r = i+1, n-1
+            while l<r:
+                sum3 = nums[i]+nums[l]+nums[r]
+                if sum3 == 0:
+                    result.add((nums[i],nums[l],nums[r]))
+                    r-=1
+                elif sum3 > 0:
+                    r-=1
+                else:
+                    l+=1
+        return result
+```
+Time complexity O(n^2)
+
+
 ### [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
 
 ```
@@ -140,3 +171,20 @@ class Solution(object):
                 nowMax = nowId + nums[nowId]
         return (nowMax>=des)           
 ```
+
+## Bit Manipulation
+### [136. Single Number](https://leetcode.com/problems/single-number/)
+
+```
+class Solution(object):
+    def singleNumber(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        r = 0
+        for i in nums:
+            r^=i
+        return r
+```
+use "^" (Caret)
