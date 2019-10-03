@@ -8,6 +8,8 @@
     - [2. Add Two Numbers](#2-add-two-numbers)
   - [Binary tree](#binary-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
+  - [Stack](#stack)
+    - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
 - [Topics](#topics)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
@@ -27,6 +29,12 @@
     - [Binary Search Tree](#binary-search-tree)
 
 <!-- /TOC -->
+
+
+
+
+
+
 
 # Data structure
 ## Linkedlist
@@ -55,6 +63,39 @@ class Solution:
 def
 ```
 Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
+
+## Stack 
+
+### [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
+
+```
+class Solution(object):
+    def removeOuterParentheses(self, S):
+        """
+        :type S: str
+        :rtype: str
+        """
+        stack = []
+        ans = ''
+        for i in S:
+            if not stack:
+                stack.append(i) 
+            elif (stack == ['(']) and (i==')'):
+                stack.pop()
+            else:
+                if i==')':
+                    stack.pop()
+                if i=='(':
+                    stack.append(i)
+                ans += i
+        return ans
+```
+
+
+
+
+
+
 
 
 # Topics
@@ -204,6 +245,21 @@ class Solution(object):
         return r
 ```
 use "^" (Caret)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # Note
 
