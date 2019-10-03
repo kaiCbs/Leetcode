@@ -1,4 +1,6 @@
 
+
+
 # Table of Contents
 <!-- TOC -->
 
@@ -15,6 +17,7 @@
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [120. Triangle](#120-triangle)
   - [Two pointers](#two-pointers)
+    - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
@@ -127,6 +130,34 @@ Time complexity o(n^2)
 
 
 ## Two pointers
+
+### [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
+
+```
+class Solution(object):
+    def lengthOfLongestSubstring(self, s):
+        """
+        :type s: str
+        :rtype: int
+        """
+        if s == "": return 0
+        ans, i, j, searchDict = 1, 0, 0, {}
+        searchDict[s[0]] = 0
+        while j<len(s)-1:
+            j+=1
+            if s[j] in searchDict:
+                if (searchDict[s[j]]<i):
+                    searchDict[s[j]] = j
+                else:
+                    i = searchDict[s[j]]+1
+                    searchDict[s[j]] = j
+            else:
+                searchDict[s[j]] = j
+            ans = max(ans,j-i+1)
+        return ans
+```
+Use two pointers to construct a slicing window. Expand the window to get the longest substring without repeating characters. View article [here](https://leetcode.com/articles/longest-substring-without-repeating-characters/).
+
 
 ### [15. 3Sum](https://leetcode.com/problems/3sum/)
 
@@ -268,8 +299,6 @@ class Solution(object):
         return r
 ```
 use "^" (Caret)
-
-
 
 
 
