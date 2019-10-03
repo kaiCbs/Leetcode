@@ -20,6 +20,7 @@
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
     - [278. First Bad Version](#278-first-bad-version)
+    - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
   - [Greedy](#greedy)
     - [55. Jump Game](#55-jump-game)
   - [Bit Manipulation](#bit-manipulation)
@@ -205,6 +206,28 @@ class Solution:
             return Solution.firstBadVersion(self,mid,m)
         else:
             return Solution.firstBadVersion(self,n,mid)
+```
+
+### [852. Peak Index in a Mountain Array](https://leetcode.com/problems/peak-index-in-a-mountain-array/)
+
+```
+class Solution(object):
+    def peakIndexInMountainArray(self, A):
+        """
+        :type A: List[int]
+        :rtype: int
+        """
+        w = len(A)
+        if w == 3:
+            return 1
+        left, right = 0, w-1
+        mid = (left + right)//2
+        if A[mid-1] < A[mid] > A[mid+1]:
+            return mid
+        if A[mid] > A[mid+1]:
+            return self.peakIndexInMountainArray(A[:mid+1])
+        else:
+            return mid + self.peakIndexInMountainArray(A[mid:])
 ```
 
 ## Greedy
