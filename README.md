@@ -12,6 +12,7 @@ Progress: [35/1212]
 - [Data structure](#data-structure)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
+    - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Binary tree](#binary-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Stack](#stack)
@@ -65,6 +66,23 @@ class Solution:
         result.next = nextValue
         return result
 ```     
+
+### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
+
+```
+class Solution(object):
+    def deleteNode(self, node):
+        """
+        :type node: ListNode
+        :rtype: void Do not return anything, modify node in-place instead.
+        """
+        node.val = node.next.val
+        node.next = node.next.next
+```
+
+[@barrywuh](https://leetcode.com/barrywuh/): I was kind of doubting the correctness of the problem since I thought without giving a head, I cannot delete the node. Then I found that some guys are smart. They change value. :D!
+[@songjiang951130](https://leetcode.com/songjiang951130/): Copy the value of next value and delete next node.
+
 ## Binary tree
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
