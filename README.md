@@ -152,7 +152,7 @@ Consider maximum sum with and without the last number.
             nums[i] += nums[i-1]
     return max(nums)
 ```
-Cleverest solution from @_LeetCode, Orz
+Cleverest solution from [@_LeetCode](https://leetcode.com/_leetcode/), Orz
 
 ### [120. Triangle](https://leetcode.com/problems/triangle/)
 ```
