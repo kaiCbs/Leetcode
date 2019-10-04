@@ -37,7 +37,6 @@
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
     - [Traverse a Tree](#traverse-a-tree)
-    - [就比如这里加一个](#%e5%b0%b1%e6%af%94%e5%a6%82%e8%bf%99%e9%87%8c%e5%8a%a0%e4%b8%80%e4%b8%aa)
 
 <!-- /TOC -->
 
@@ -203,8 +202,27 @@ record and update the tuple (gain1,gain2), where gain1 is the gain that robber r
 ### [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
 
 ```
-def 
+class NumArray(object):
+
+    def __init__(self, nums):
+        """
+        :type nums: List[int]
+        """
+        self.cumsum = [0]
+        temp = 0
+        for i in nums:
+            temp += i
+            self.cumsum.append(temp)    
+
+    def sumRange(self, i, j):
+        """
+        :type i: int
+        :type j: int
+        :rtype: int
+        """
+        return self.cumsum[j+1] - self.cumsum[i]  
 ```
+Pre-compute the cumulative sum.
 
 ### [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 
@@ -421,5 +439,3 @@ use "^" (Caret), XOR operator
 > - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
 > - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
 > - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
-
-### 就比如这里加一个
