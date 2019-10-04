@@ -19,6 +19,7 @@
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
     - [198. House Robber](#198-house-robber)
+    - [338. Counting Bits](#338-counting-bits)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
@@ -190,6 +191,22 @@ class Solution(object):
         return max(money)
 ```
 record and update the tuple (gain1,gain2), where gain1 is the gain that robber robbed the last house, gain2 is the gain he didn't.
+
+### [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
+
+```
+class Solution(object):
+    def countBits(self, num):
+        """
+        :type num: int
+        :rtype: List[int]
+        """
+        ans = [0]
+        for i in range(1,num+1):
+            ans.append(ans[i//2] + i%2)
+        return ans
+```
+Keep in mind: f(n) = f(n//2) + n%2
 
 ## Two pointers
 
