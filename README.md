@@ -3,8 +3,8 @@
 
 # Table of Contents 
 
-2019-10-05
-Progress: [35/1212] 
+2019-10-04 
+Progress: [35/1212]
 
 <!-- TOC -->
 
@@ -82,6 +82,7 @@ class Solution(object):
 
 [@barrywuh](https://leetcode.com/barrywuh/): I was kind of doubting the correctness of the problem since I thought without giving a head, I cannot delete the node. Then I found that some guys are smart. They change value. :D!
 [@songjiang951130](https://leetcode.com/songjiang951130/): Copy the value of next value and delete next node.
+
 
 ## Binary tree
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
