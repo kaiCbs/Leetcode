@@ -19,6 +19,7 @@
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
     - [198. House Robber](#198-house-robber)
+    - [303. Range Sum Query - Immutable](#303-range-sum-query---immutable)
     - [338. Counting Bits](#338-counting-bits)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
@@ -202,6 +203,12 @@ class Solution(object):
         return max(money)
 ```
 record and update the tuple (gain1,gain2), where gain1 is the gain that robber robbed the last house, gain2 is the gain he didn't.
+
+### [303. Range Sum Query - Immutable](https://leetcode.com/problems/range-sum-query-immutable/)
+
+```
+def 
+```
 
 ### [338. Counting Bits](https://leetcode.com/problems/counting-bits/)
 
