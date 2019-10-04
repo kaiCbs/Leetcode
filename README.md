@@ -189,9 +189,7 @@ class Solution(object):
             money = [max(money[0],money[1]), (money[0]+nums[i+2])]
         return max(money)
 ```
-record and update the maximum gain that the robber rob the last house and not rob the last house.
-
-
+record and update the tuple (gain1,gain2), where gain1 is the gain that robber robbed the last house, gain2 is the gain he didn't.
 
 ## Two pointers
 
