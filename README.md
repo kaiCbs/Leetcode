@@ -16,6 +16,7 @@
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [120. Triangle](#120-triangle)
+    - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
@@ -29,8 +30,9 @@
   - [Bit Manipulation](#bit-manipulation)
     - [136. Single Number](#136-single-number)
 - [Note](#note)
-  - [Terminology](#terminology)
+  - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
+    - [Traverse a Tree](#traverse-a-tree)
 
 <!-- /TOC -->
 
@@ -127,6 +129,26 @@ class Solution(object):
         return min(last)
 ```
 Time complexity o(n^2)
+
+### [121. Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/)
+
+```
+class Solution(object):
+    def maxProfit(self, prices):
+        """
+        :type prices: List[int]
+        :rtype: int
+        """
+        if not prices:
+            return 0
+        minPrice = prices[0]
+        profit = 0
+        for p in prices[1:]:
+            profit = max(profit, p-minPrice)
+            minPrice = min(minPrice,p)
+        return profit
+```
+record **minimum price in history** and **maximum profit** and update.
 
 
 ## Two pointers
@@ -312,16 +334,19 @@ use "^" (Caret), XOR operator
 
 
 
-
 # Note
 
-## Terminology
+## Trees
 
 ### Binary Search Tree
-```
-Binary Search Tree is a node-based binary tree data structure which has the following properties:
 
-- The left subtree of a node contains only nodes with keys lesser than the node’s key.
-- The right subtree of a node contains only nodes with keys greater than the node’s key.
-- The left and right subtree each must also be a binary search tree.
-```
+> Binary Search Tree is a node-based binary tree data structure which has the following properties:
+> - The left subtree of a node contains only nodes with keys lesser than the node’s key.
+> - The right subtree of a node contains only nodes with keys greater than the node’s key.
+> - The left and right subtree each must also be a binary search tree.
+
+
+### Traverse a Tree
+> - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
+> - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
+> - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
