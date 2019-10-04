@@ -145,13 +145,14 @@ class Solution(object):
 ```
 Consider maximum sum with and without the last number.
 
-Cleverest solution from @_LeetCode, Orz
+
 ```
     for i in range(1, len(nums)):
         if nums[i-1] > 0:
             nums[i] += nums[i-1]
     return max(nums)
 ```
+Cleverest solution from @_LeetCode, Orz
 
 ### [120. Triangle](https://leetcode.com/problems/triangle/)
 ```
