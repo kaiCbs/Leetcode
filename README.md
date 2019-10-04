@@ -37,13 +37,9 @@
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
     - [Traverse a Tree](#traverse-a-tree)
+    - [就比如这里加一个](#%e5%b0%b1%e6%af%94%e5%a6%82%e8%bf%99%e9%87%8c%e5%8a%a0%e4%b8%80%e4%b8%aa)
 
 <!-- /TOC -->
-
-
-
-
-
 
 
 # Data structure
@@ -425,3 +421,5 @@ use "^" (Caret), XOR operator
 > - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
 > - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
 > - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+
+### 就比如这里加一个
