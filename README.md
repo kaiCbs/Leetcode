@@ -18,6 +18,7 @@
     - [53. Maximum Subarray](#53-maximum-subarray)
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
+    - [198. House Robber](#198-house-robber)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
@@ -110,6 +111,7 @@ class Solution(object):
 
 ### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
+
 ### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
 ```
@@ -170,6 +172,25 @@ class Solution(object):
         return profit
 ```
 record **minimum price in history** and **maximum profit** and update.
+
+### [198. House Robber](https://leetcode.com/problems/house-robber/)
+
+```
+class Solution(object):
+    def rob(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if len(nums)<2:
+            return sum(nums)
+        money = [nums[0],nums[1]]
+        for i in range(len(nums)-2):
+            money = [max(money[0],money[1]), (money[0]+nums[i+2])]
+        return max(money)
+```
+record and update the maximum gain that the robber rob the last house and not rob the last house.
+
 
 
 ## Two pointers
