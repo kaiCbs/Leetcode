@@ -15,6 +15,7 @@
 - [Topics](#topics)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
+    - [53. Maximum Subarray](#53-maximum-subarray)
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
   - [Two pointers](#two-pointers)
@@ -109,6 +110,26 @@ class Solution(object):
 
 ### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
 
+### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
+
+```
+class Solution(object):
+    def maxSubArray(self, nums):
+        """
+        :type nums: List[int]
+        :rtype: int
+        """
+        if not nums: return 0
+        maxsub = [0,0,nums[0]]
+        for n in nums:
+            maxsub[0] = (max(maxsub[0],0) + n)
+            maxsub[1] = max(maxsub[1],maxsub[0],n)
+            maxsub[2] = max(maxsub[2],n)
+        if maxsub[2] < 0:
+            return maxsub[2]
+        return max(maxsub)
+```
+Consider maximum sum with and without the last number.
 
 ### [120. Triangle](https://leetcode.com/problems/triangle/)
 ```
