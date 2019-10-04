@@ -69,7 +69,18 @@ class Solution:
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
 ```
-def
+class Solution(object):
+    def rangeSumBST(self, root, L, R):
+        """
+        :type root: TreeNode
+        :type L: int
+        :type R: int
+        :rtype: int
+        """
+        if not root: return 0
+        if root.val < L: return self.rangeSumBST(root.right, L, R)
+        if root.val > R : return self.rangeSumBST(root.left, L, R)
+        return root.val + self.rangeSumBST(root.left, L, R) + self.rangeSumBST(root.right, L, R)
 ```
 Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
 
