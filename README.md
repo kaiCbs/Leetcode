@@ -18,6 +18,8 @@ Progress: [39/1212]
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Stack](#stack)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
+  - [Hash Table](#hash-table)
+    - [1. Two Sum](#1-two-sum)
 - [Topics](#topics)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
@@ -157,9 +159,19 @@ class Solution(object):
 
 
 
+## Hash Table
+### [1. Two Sum](https://leetcode.com/problems/two-sum/)
 
-
-
+```
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        h = {}
+        for i, num in enumerate(nums):
+            if num in h:
+                return [i,h[num]]
+            h[target-num] = i
+```
+Use hash table to reduce time complexity. O(n), push number meanwhile check for pair
 
 
 # Topics
