@@ -3,7 +3,7 @@
 
 # Table of Contents 
 
-2019-10-04 
+Date: 2019-10-04
 Progress: [35/1212]
 
 <!-- TOC -->
@@ -12,6 +12,7 @@ Progress: [35/1212]
 - [Data structure](#data-structure)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
+    - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Binary tree](#binary-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
@@ -32,6 +33,7 @@ Progress: [35/1212]
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
+    - [50. Pow(x, n)](#50-powx-n)
     - [278. First Bad Version](#278-first-bad-version)
     - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
   - [Greedy](#greedy)
@@ -45,9 +47,8 @@ Progress: [35/1212]
 
 <!-- /TOC -->
 
-
 # Data structure
-## Linkedlist
+## Linkedlist 
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 ```
 class Solution:
@@ -66,6 +67,30 @@ class Solution:
         result.next = nextValue
         return result
 ```     
+
+### [21. Merge Two Sorted Lists](https://leetcode.com/problems/merge-two-sorted-lists/)
+
+```
+class Solution(object):
+    def mergeTwoLists(self, l1, l2):
+        """
+        :type l1: ListNode
+        :type l2: ListNode
+        :rtype: ListNode
+        """
+        if not l1:
+            return l2
+        if not l2:
+            return l1
+        if l1.val < l2.val:
+            l1.next = self.mergeTwoLists(l1.next, l2)
+            return l1
+        else:
+            l2.next = self.mergeTwoLists(l1, l2.next)
+            return l2
+```
+
+[@greatgrahambini](https://leetcode.com/greatgrahambini/): While this is indeed elegant, it should be noted that this would be a terrible solution from a practical point of view, as the stack size would be equal to the length of the merged list, which would result in a stack overflow for relatively small lengths of lists
 
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
@@ -364,6 +389,16 @@ class Solution:
 Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate the list, drag valid number to the head.
 
 ## Binary Search
+
+
+### [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+
+```
+def f():
+    pass
+```
+
+
 
 ### [278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
 ```
