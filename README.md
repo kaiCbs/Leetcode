@@ -27,13 +27,13 @@ Progress: [37/1212]
     - [198. House Robber](#198-house-robber)
     - [303. Range Sum Query - Immutable](#303-range-sum-query---immutable)
     - [338. Counting Bits](#338-counting-bits)
+    - [746. Min Cost Climbing Stairs](#746-min-cost-climbing-stairs)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
-    - [50. Pow(x, n)](#50-powx-n)
     - [278. First Bad Version](#278-first-bad-version)
     - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
   - [Greedy](#greedy)
@@ -297,6 +297,23 @@ class Solution(object):
 ```
 Keep in mind: f(n) = f(n//2) + n%2
 
+### [746. Min Cost Climbing Stairs](https://leetcode.com/problems/min-cost-climbing-stairs/)
+
+```
+class Solution(object):
+    def minCostClimbingStairs(self, cost):
+        """
+        :type cost: List[int]
+        :rtype: int
+        """
+        if len(cost) < 3:
+            return min(cost)
+        mincost = [cost[0],cost[1]]
+        for i in range(len(cost)-2):
+            mincost[0], mincost[1] = mincost[1], min(mincost)+cost[i+2]
+        return min(mincost)
+```
+
 ## Two pointers
 
 ### [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
@@ -389,15 +406,6 @@ class Solution:
 Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate the list, drag valid number to the head.
 
 ## Binary Search
-
-
-### [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
-
-```
-def f():
-    pass
-```
-
 
 
 ### [278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
