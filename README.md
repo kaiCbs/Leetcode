@@ -33,6 +33,7 @@ Progress: [39/1212]
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
+    - [19. Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
@@ -381,6 +382,22 @@ class Solution(object):
         return result
 ```
 Time complexity O(n^2)
+
+### [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
+```
+class Solution:
+    def removeNthFromEnd(self, head: ListNode, n: int) -> ListNode:
+        fast, slow = head, head
+        for i in range(n):
+            fast = fast.next
+        if not fast:
+            head = head.next
+            return head
+        while fast.next:
+            fast, slow = fast.next, slow.next
+        slow.next = slow.next.next
+        return head
+```
 
 
 ### [26. Remove Duplicates from Sorted Array](https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/)
