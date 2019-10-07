@@ -125,7 +125,6 @@ def swapPairs(self, head):
     return self.next
 ```
 
-
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
 ```
@@ -203,7 +202,7 @@ class Solution:
                 return [i,h[num]]
             h[target-num] = i
 ```
-Use hash table to reduce time complexity. O(n), push number meanwhile check for pair
+Use hash table to reduce time complexity. O(n), push number meanwhile check for pairs.
 
 
 # Topics
@@ -574,9 +573,3 @@ use "^" (Caret), XOR operator
 > - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
 > - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
 > - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
-
-
-$
-(Y-X\beta)(Y-X\beta)'=
-(Y-X\beta)(Y'-\beta'X')
-$
