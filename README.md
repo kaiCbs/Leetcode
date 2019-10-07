@@ -4,24 +4,29 @@
 # Table of Contents 
 
 Date: 2019-10-06
-Progress: [42/1212]
+Progress: [44/1212]
 
 <!-- TOC -->
 
 - [Table of Contents](#table-of-contents)
 - [Data structure](#data-structure)
+  - [String](#string)
+  - [Array](#array)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
-  - [Binary tree](#binary-tree)
-    - [938. Range Sum of BST](#938-range-sum-of-bst)
-  - [Stack](#stack)
+  - [Stack and Queue](#stack-and-queue)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
+  - [Tree and Graph](#tree-and-graph)
+    - [938. Range Sum of BST](#938-range-sum-of-bst)
+  - [Heap](#heap)
   - [Hash Table](#hash-table)
     - [1. Two Sum](#1-two-sum)
-- [Topics](#topics)
+- [Algorithm](#algorithm)
+  - [Sorting](#sorting)
+  - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [53. Maximum Subarray](#53-maximum-subarray)
@@ -31,6 +36,8 @@ Progress: [42/1212]
     - [303. Range Sum Query - Immutable](#303-range-sum-query---immutable)
     - [338. Counting Bits](#338-counting-bits)
     - [746. Min Cost Climbing Stairs](#746-min-cost-climbing-stairs)
+  - [Graph Theory](#graph-theory)
+- [Topics](#topics)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [15. 3Sum](#15-3sum)
@@ -52,6 +59,9 @@ Progress: [42/1212]
 <!-- /TOC -->
 
 # Data structure
+
+## String
+## Array
 ## Linkedlist 
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 ```
@@ -141,27 +151,8 @@ class Solution(object):
 [@barrywuh](https://leetcode.com/barrywuh/): I was kind of doubting the correctness of the problem since I thought without giving a head, I cannot delete the node. Then I found that some guys are smart. They change value. :D!  
 [@songjiang951130](https://leetcode.com/songjiang951130/): Copy the value of next value and delete next node.
 
+## Stack and Queue
 
-## Binary tree
-### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
-
-```
-class Solution(object):
-    def rangeSumBST(self, root, L, R):
-        """
-        :type root: TreeNode
-        :type L: int
-        :type R: int
-        :rtype: int
-        """
-        if not root: return 0
-        if root.val < L: return self.rangeSumBST(root.right, L, R)
-        if root.val > R : return self.rangeSumBST(root.left, L, R)
-        return root.val + self.rangeSumBST(root.left, L, R) + self.rangeSumBST(root.right, L, R)
-```
-Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
-
-## Stack 
 
 ### [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
 
@@ -188,6 +179,26 @@ class Solution(object):
         return ans
 ```
 
+## Tree and Graph
+### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
+
+```
+class Solution(object):
+    def rangeSumBST(self, root, L, R):
+        """
+        :type root: TreeNode
+        :type L: int
+        :type R: int
+        :rtype: int
+        """
+        if not root: return 0
+        if root.val < L: return self.rangeSumBST(root.right, L, R)
+        if root.val > R : return self.rangeSumBST(root.left, L, R)
+        return root.val + self.rangeSumBST(root.left, L, R) + self.rangeSumBST(root.right, L, R)
+```
+Use property of [BST](#binary-search-tree) to save time, (no need to traverse all sub-trees).
+
+## Heap
 
 
 ## Hash Table
@@ -205,7 +216,12 @@ class Solution:
 Use hash table to reduce time complexity. O(n), push number meanwhile check for pairs.
 
 
-# Topics
+# Algorithm
+
+## Sorting
+
+## Searching 
+
 ## Dynamic programming
 
 ### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
@@ -357,6 +373,9 @@ class Solution(object):
         return min(mincost)
 ```
 
+## Graph Theory
+
+# Topics
 ## Two pointers
 
 ### [3. Longest Substring Without Repeating Characters](https://leetcode.com/problems/longest-substring-without-repeating-characters/)
