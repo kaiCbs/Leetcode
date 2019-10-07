@@ -28,7 +28,6 @@ Progress: [44/1212]
   - [Sorting](#sorting)
   - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
-    - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [53. Maximum Subarray](#53-maximum-subarray)
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
@@ -223,9 +222,6 @@ Use hash table to reduce time complexity. O(n), push number meanwhile check for 
 ## Searching 
 
 ## Dynamic programming
-
-### [5. Longest Palindromic Substring](https://leetcode.com/problems/longest-palindromic-substring/)
-
 
 ### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
 
