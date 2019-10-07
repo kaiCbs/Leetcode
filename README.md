@@ -13,6 +13,7 @@ Progress: [42/1212]
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
+    - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Binary tree](#binary-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
@@ -94,6 +95,36 @@ class Solution(object):
 ```
 
 [@greatgrahambini](https://leetcode.com/greatgrahambini/): While this is indeed elegant, it should be noted that this would be a terrible solution from a practical point of view, as the stack size would be equal to the length of the merged list, which would result in a stack overflow for relatively small lengths of lists
+
+### [24. Swap Nodes in Pairs](https://leetcode.com/problems/swap-nodes-in-pairs/)
+
+```
+class Solution(object):
+    def swapPairs(self, head):
+        """
+        :type head: ListNode
+        :rtype: ListNode
+        """
+        if (head == None) or (head.next == None):
+            return head
+        subHead = head.next.next
+        newHead = head.next
+        newHead.next = head
+        head.next = self.swapPairs(subHead)
+        return newHead
+```
+Recursion is trivial, however, we need to know how to do it in an iterative way. Here we go
+```
+def swapPairs(self, head):
+    pre, pre.next = self, head
+    while pre.next and pre.next.next:
+        a = pre.next
+        b = a.next
+        pre.next, b.next, a.next = b, a, b.next
+        pre = a
+    return self.next
+```
+
 
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
@@ -543,3 +574,9 @@ use "^" (Caret), XOR operator
 > - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
 > - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
 > - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+
+
+$
+(Y-X\beta)(Y-X\beta)'=
+(Y-X\beta)(Y'-\beta'X')
+$
