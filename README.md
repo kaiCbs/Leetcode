@@ -3,8 +3,8 @@
 
 # Table of Contents 
 
-Date: 2019-10-06
-Progress: [44/1212]
+Date: 2019-10-07
+Progress: [45/1212]
 
 <!-- TOC -->
 
