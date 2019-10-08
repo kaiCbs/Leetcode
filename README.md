@@ -608,16 +608,16 @@ use "^" (Caret), XOR operator
 
 ### Binary Search Tree
 
-> Binary Search Tree is a node-based binary tree data structure which has the following properties:
-> - The left subtree of a node contains only nodes with keys lesser than the node’s key.
-> - The right subtree of a node contains only nodes with keys greater than the node’s key.
-> - The left and right subtree each must also be a binary search tree.
+ Binary Search Tree is a node-based binary tree data structure which has the following properties:
+ - The left subtree of a node contains only nodes with keys lesser than the node’s key.
+ - The right subtree of a node contains only nodes with keys greater than the node’s key.
+ - The left and right subtree each must also be a binary search tree.
 
 
 ### Traverse a Tree
-> - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
-> - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
-> - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+ - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
+ - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
+ - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
 
 ### prime generator
 ```
