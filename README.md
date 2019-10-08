@@ -4,7 +4,7 @@
 # Table of Contents 
 
 Date: 2019-10-08
-Progress: [48/1212]
+Progress: [49/1212]
 
 <!-- TOC -->
 
@@ -18,6 +18,7 @@ Progress: [48/1212]
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
+    - [921. Minimum Add to Make Parentheses Valid](#921-minimum-add-to-make-parentheses-valid)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
   - [Tree and Graph](#tree-and-graph)
     - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
@@ -153,6 +154,21 @@ class Solution(object):
 
 ## Stack and Queue
 
+### [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
+
+```
+class Solution:
+    def minAddToMakeValid(self, S: str) -> int:
+        ans = []
+        for i in S:
+            if not ans:
+                ans.append(i)
+            elif ans[-1] + i == '()':
+                ans.pop()
+            else:
+                ans.append(i)
+        return len(ans)
+```
 
 ### [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
 
