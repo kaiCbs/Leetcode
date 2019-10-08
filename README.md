@@ -3,7 +3,7 @@
 
 # Table of Contents 
 
-Date: 2019-10-07
+Date: 2019-10-08
 Progress: [48/1212]
 
 <!-- TOC -->
@@ -20,6 +20,7 @@ Progress: [48/1212]
   - [Stack and Queue](#stack-and-queue)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
   - [Tree and Graph](#tree-and-graph)
+    - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Heap](#heap)
   - [Hash Table](#hash-table)
@@ -179,6 +180,18 @@ class Solution(object):
 ```
 
 ## Tree and Graph
+
+### [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+```
+class Solution:
+    def isValidBST(self, root: TreeNode, mi = float('-inf'), ma = float('inf')) -> bool:
+        if not root:
+            return True
+        if (root.val >= ma) or (root.val <= mi):
+            return False
+        return self.isValidBST(root.left,mi,root.val) and self.isValidBST(root.right,root.val,ma)
+```
+
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
 ```
