@@ -56,6 +56,7 @@ Progress: [51/1212]
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
     - [Traverse a Tree](#traverse-a-tree)
+    - [prime generator](#prime-generator)
 
 <!-- /TOC -->
 
@@ -617,3 +618,20 @@ use "^" (Caret), XOR operator
 > - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
 > - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
 > - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+
+### prime generator
+```
+def divide(n): 
+    return lambda x: x % n > 0
+
+def primes(k): 
+        ans = [2] 
+        n=2 
+        it = iter(range(3,2*k,2))  
+        while n<k: 
+            n = next(it)  
+            ans.append(n) 
+            it = filter(divide(n), it) 
+        ans.pop() 
+        return ans 
+``` 
