@@ -3,8 +3,8 @@
 
 # Table of Contents 
 
-Date: 2019-10-07
-Progress: [48/1212]
+Date: 2019-10-08
+Progress: [51/1212]
 
 <!-- TOC -->
 
@@ -18,8 +18,10 @@ Progress: [48/1212]
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
+    - [921. Minimum Add to Make Parentheses Valid](#921-minimum-add-to-make-parentheses-valid)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
   - [Tree and Graph](#tree-and-graph)
+    - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Heap](#heap)
   - [Hash Table](#hash-table)
@@ -55,6 +57,7 @@ Progress: [48/1212]
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
     - [Traverse a Tree](#traverse-a-tree)
+    - [prime generator](#prime-generator)
 
 <!-- /TOC -->
 
@@ -153,6 +156,21 @@ class Solution(object):
 
 ## Stack and Queue
 
+### [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
+
+```
+class Solution:
+    def minAddToMakeValid(self, S: str) -> int:
+        ans = []
+        for i in S:
+            if not ans:
+                ans.append(i)
+            elif ans[-1] + i == '()':
+                ans.pop()
+            else:
+                ans.append(i)
+        return len(ans)
+```
 
 ### [1021. Remove Outermost Parentheses](https://leetcode.com/problems/remove-outermost-parentheses/)
 
@@ -180,6 +198,18 @@ class Solution(object):
 ```
 
 ## Tree and Graph
+
+### [98. Validate Binary Search Tree](https://leetcode.com/problems/validate-binary-search-tree/)
+```
+class Solution:
+    def isValidBST(self, root: TreeNode, mi = float('-inf'), ma = float('inf')) -> bool:
+        if not root:
+            return True
+        if (root.val >= ma) or (root.val <= mi):
+            return False
+        return self.isValidBST(root.left,mi,root.val) and self.isValidBST(root.right,root.val,ma)
+```
+
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
 
 ```
@@ -600,13 +630,30 @@ use "^" (Caret), XOR operator
 
 ### Binary Search Tree
 
-> Binary Search Tree is a node-based binary tree data structure which has the following properties:
-> - The left subtree of a node contains only nodes with keys lesser than the node’s key.
-> - The right subtree of a node contains only nodes with keys greater than the node’s key.
-> - The left and right subtree each must also be a binary search tree.
+ Binary Search Tree is a node-based binary tree data structure which has the following properties:
+ - The left subtree of a node contains only nodes with keys lesser than the node’s key.
+ - The right subtree of a node contains only nodes with keys greater than the node’s key.
+ - The left and right subtree each must also be a binary search tree.
 
 
 ### Traverse a Tree
-> - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
-> - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
-> - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+ - **Pre-order** traversal is to visit the root first. Then traverse the left subtree. Finally, traverse the right subtree. 
+ - **In-order** traversal is to traverse the left subtree first. Then visit the root. Finally, traverse the right subtree.
+ - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
+
+### prime generator
+```
+def divide(n): 
+    return lambda x: x % n > 0
+
+def primes(k): 
+        ans = [2] 
+        n=2 
+        it = iter(range(3,2*k,2))  
+        while n<k: 
+            n = next(it)  
+            ans.append(n) 
+            it = filter(divide(n), it) 
+        ans.pop() 
+        return ans 
+``` 
