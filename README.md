@@ -26,6 +26,7 @@ Progress: [48/1212]
     - [1. Two Sum](#1-two-sum)
 - [Algorithm](#algorithm)
   - [Sorting](#sorting)
+    - [56. Merge Intervals](#56-merge-intervals)
   - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
     - [53. Maximum Subarray](#53-maximum-subarray)
@@ -218,6 +219,27 @@ Use hash table to reduce time complexity. O(n), push number meanwhile check for 
 # Algorithm
 
 ## Sorting
+
+### [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
+```
+class Solution(object):
+    def merge(self, intervals):
+        """
+        :type intervals: List[List[int]]
+        :rtype: List[List[int]]
+        """
+        if not intervals:
+            return []
+        intervals.sort(key=lambda x:x[0])
+        ans = [intervals[0]]
+        for itv in intervals[1:]:
+            if itv[0]<=ans[-1][1]:
+                ans[-1][1] = max(itv[1],ans[-1][1])
+            else:
+                ans.append(itv)
+        return ans
+```
+Sort the intervals by their start value, then merge them one by one.
 
 ## Searching 
 
