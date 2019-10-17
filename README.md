@@ -46,6 +46,7 @@ Progress: [55/1212]
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
+    - [50. Pow(x, n)](#50-powx-n)
     - [278. First Bad Version](#278-first-bad-version)
     - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
   - [Greedy](#greedy)
@@ -532,6 +533,29 @@ Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate
 
 ## Binary Search
 
+### [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
+```
+def myPow(self, x, n):
+    """
+    :type x: float
+    :type n: int
+    :rtype: float
+    """
+    if n==0:
+        return 1
+    if n<0:
+        return self.myPow(1/x,-n)
+    ans = 1
+    while n>0:
+        x_p,p = x,1
+        while 2*p <= n:
+            p*=2
+            x_p = x_p * x_p
+        ans *= x_p
+        n -= p
+    return ans
+```
+Fast Power. O(ln N)
 
 ### [278. First Bad Version](https://leetcode.com/problems/first-bad-version/description/)
 ```
