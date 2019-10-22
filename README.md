@@ -3,7 +3,7 @@
 # Table of Contents 
 
 Date: 2019-10-22
-Progress: [58/1212]
+Progress: [62/1212]
 
 <!-- TOC -->
 
@@ -11,6 +11,7 @@ Progress: [58/1212]
 - [Data structure](#data-structure)
   - [String](#string)
     - [6. ZigZag Conversion](#6-zigzag-conversion)
+    - [8. String to Integer (atoi)](#8-string-to-integer-atoi)
   - [Array](#array)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
@@ -76,6 +77,23 @@ class Solution:
         return ''.join([s[i[1]] for i in Key])
 ```
 Mod(2*row-1), same pattern
+
+### [8. String to Integer (atoi)](https://leetcode.com/problems/string-to-integer-atoi/)
+```
+class Solution:
+    def myAtoi(self, str):
+        """
+        :type str: str
+        :rtype: int
+        """
+        rex = re.match(' *([-+]?\d+)',str)
+        if rex:
+            value = int(rex.group(1))
+            return max(min(value,2**31-1),-2**31)
+        else:
+            return 0
+```
+See how regular expression simplifies life.
 
 ## Array
 ## Linkedlist 
