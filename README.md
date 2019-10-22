@@ -46,6 +46,7 @@ Progress: [56/1212]
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
   - [Binary Search](#binary-search)
+    - [4. Median of Two Sorted Arrays](#4-median-of-two-sorted-arrays)
     - [50. Pow(x, n)](#50-powx-n)
     - [278. First Bad Version](#278-first-bad-version)
     - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
@@ -532,6 +533,41 @@ class Solution:
 Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate the list, drag valid number to the head.
 
 ## Binary Search
+
+### [4. Median of Two Sorted Arrays](https://leetcode.com/problems/median-of-two-sorted-arrays/)
+
+```
+class Solution(object):
+    def findMedianSortedArrays(self, nums1, nums2,sp1=0,sp2=0,l1=0,l2=0):
+        """
+        :type nums1: List[int]
+        :type nums2: List[int]
+        :rtype: float
+        """
+        if l1+l2==0:
+            l1,l2 = len(nums1),len(nums2)
+        def mid(num,sp,l):
+            midValue = (num[sp+l//2]+num[sp+(l-1)//2])/2
+            return midValue
+        if (l1>l2+4):
+            sp1 +=(l1-l2-1)//2
+            l1 -= ((l1-l2-1)//2) * 2
+        elif (l2>l1+4):
+            sp2 += (l2-l1-1)//2
+            l2 -= ((l2-l1-1)//2) * 2
+        while (l1+l2)>10:
+            minl = min(l1,l2)
+            shorten = (minl+1)//2-1
+            if mid(nums1, sp1, l1) < mid(nums2, sp2, l2):
+                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1+shorten,sp2=sp2,l1=l1-shorten,l2=l2-shorten)
+            elif mid(nums1, sp1, l1) > mid(nums2, sp2, l2):
+                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1,sp2=sp2+shorten,l1=l1-shorten,l2=l2-shorten)
+            else:
+                return mid(nums1, sp1, l1)
+        new = sorted(nums1[sp1:sp1+l1]+nums2[sp2:sp2+l2])
+        return mid(new,0,l1+l2)
+```
+
 
 ### [50. Pow(x, n)](https://leetcode.com/problems/powx-n/)
 ```
