@@ -10,6 +10,7 @@ Progress: [58/1212]
 - [Table of Contents](#table-of-contents)
 - [Data structure](#data-structure)
   - [String](#string)
+    - [6. ZigZag Conversion](#6-zigzag-conversion)
   - [Array](#array)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
@@ -66,6 +67,16 @@ Progress: [58/1212]
 # Data structure
 
 ## String
+### [6. ZigZag Conversion](https://leetcode.com/problems/zigzag-conversion/)
+```
+class Solution:
+    def convert(self, s: str, numRows: int) -> str:
+        if numRows<2: return s
+        Key = sorted([(-abs((i%((numRows-1)*2))+1-numRows),i) for i in range(len(s))])
+        return ''.join([s[i[1]] for i in Key])
+```
+Mod(2*row-1), same pattern
+
 ## Array
 ## Linkedlist 
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
