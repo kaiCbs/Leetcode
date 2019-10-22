@@ -556,12 +556,12 @@ class Solution(object):
             sp2 += (l2-l1-1)//2
             l2 -= ((l2-l1-1)//2) * 2
         while (l1+l2)>10:
-            minl = min(l1,l2)
-            shorten = (minl+1)//2-1
+            lmin = min(l1,l2)
+            st = (lmin+1)//2-1
             if mid(nums1, sp1, l1) < mid(nums2, sp2, l2):
-                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1+shorten,sp2=sp2,l1=l1-shorten,l2=l2-shorten)
+                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1+st,sp2=sp2,l1=l1-st,l2=l2-st)
             elif mid(nums1, sp1, l1) > mid(nums2, sp2, l2):
-                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1,sp2=sp2+shorten,l1=l1-shorten,l2=l2-shorten)
+                return self.findMedianSortedArrays(nums1, nums2,sp1=sp1,sp2=sp2+st,l1=l1-st,l2=l2-st)
             else:
                 return mid(nums1, sp1, l1)
         new = sorted(nums1[sp1:sp1+l1]+nums2[sp2:sp2+l2])
