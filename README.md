@@ -2,8 +2,8 @@
 
 # Table of Contents 
 
-Date: 2019-10-22
-Progress: [62/1212]
+Date: 2019-10-23
+Progress: [64/1212]
 
 <!-- TOC -->
 
@@ -13,6 +13,7 @@ Progress: [62/1212]
     - [6. ZigZag Conversion](#6-zigzag-conversion)
     - [8. String to Integer (atoi)](#8-string-to-integer-atoi)
   - [Array](#array)
+    - [48. Rotate Image](#48-rotate-image)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
@@ -97,6 +98,18 @@ class Solution:
 See how regular expression simplifies life.
 
 ## Array
+### [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
+
+```
+class Solution:
+    def rotate(self, matrix: List[List[int]]) -> None:
+        """
+        Do not return anything, modify matrix in-place instead.
+        """
+        matrix[:] = [[r[i]for r in matrix[::-1]] for i in range(len(matrix))] 
+```
+
+
 ## Linkedlist 
 ### [2. Add Two Numbers](https://leetcode.com/problems/add-two-numbers/description/)
 ```
