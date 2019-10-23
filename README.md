@@ -28,6 +28,7 @@ Progress: [64/1212]
   - [Heap](#heap)
   - [Hash Table](#hash-table)
     - [1. Two Sum](#1-two-sum)
+    - [49. Group Anagrams](#49-group-anagrams)
 - [Algorithm](#algorithm)
   - [Sorting](#sorting)
     - [56. Merge Intervals](#56-merge-intervals)
@@ -290,6 +291,16 @@ class Solution:
 ```
 Use hash table to reduce time complexity. O(n), push number meanwhile check for pairs.
 
+### [49. Group Anagrams](https://leetcode.com/problems/group-anagrams/)
+```
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        ans = {}
+        for i in strs:
+            ans.setdefault("".join(sorted(i)),[]).append(i)
+        return ans.values()
+```
+Use Hash table, and notice the usage of *.setdefault*
 
 # Algorithm
 
