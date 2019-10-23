@@ -3,7 +3,7 @@
 # Table of Contents 
 
 Date: 2019-10-23
-Progress: [64/1212]
+Progress: [70/1212]
 
 <!-- TOC -->
 
@@ -35,6 +35,7 @@ Progress: [64/1212]
   - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
+    - [39. Combination Sum](#39-combination-sum)
     - [53. Maximum Subarray](#53-maximum-subarray)
     - [120. Triangle](#120-triangle)
     - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
@@ -359,6 +360,18 @@ class Solution:
                     dic[(m-1,j+1)] = 0
             j+=1
         return s[hisLong[0]:hisLong[1]]
+```
+### [39. Combination Sum](https://leetcode.com/problems/combination-sum/)
+```
+class Solution:
+    def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
+        if target < 0:
+            return []
+        elif target == 0:
+            return [[]]
+        if candidates==[]:
+            return []
+        return [[candidates[0]]+i for i in self.combinationSum(candidates,target-candidates[0])] + self.combinationSum(candidates[1:],target)
 ```
 
 ### [53. Maximum Subarray](https://leetcode.com/problems/maximum-subarray/)
