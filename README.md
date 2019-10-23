@@ -44,6 +44,7 @@ Progress: [62/1212]
 - [Topics](#topics)
   - [Two pointers](#two-pointers)
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
+    - [11. Container With Most Water](#11-container-with-most-water)
     - [15. 3Sum](#15-3sum)
     - [19. Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
@@ -514,6 +515,24 @@ class Solution(object):
 ```
 Use two pointers to construct a slicing window. Expand the window to get the longest substring without repeating characters. View article [here](https://leetcode.com/articles/longest-substring-without-repeating-characters/).
 
+### [11. Container With Most Water](https://leetcode.com/problems/container-with-most-water/)
+```
+class Solution:
+    def maxArea(self, height: List[int]) -> int:
+        i,j = 0, len(height)-1
+        ans = (j-i) * min(height[i],height[j])
+        while j-i>0:
+            if height[i] < height[j]:
+                water = height[i]*(j-i)
+                i+=1
+            else:
+                water = height[j]*(j-i)
+                j-=1
+            if water > ans:
+                ans = water
+        return ans
+```
+Start with the maximum width container and go to a shorter width container if there is a vertical line longer than the current containers shorter line. 
 
 ### [15. 3Sum](https://leetcode.com/problems/3sum/)
 
