@@ -31,6 +31,7 @@ Progress: [70/1212]
   - [Sorting](#sorting)
     - [56. Merge Intervals](#56-merge-intervals)
     - [75. Sort Colors](#75-sort-colors)
+    - [179. Largest Number](#179-largest-number)
   - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
@@ -349,6 +350,15 @@ void sortColors(int A[], int n) {
 }
 ```
 The Dutch National Flag Problem. Great Video [here](https://www.youtube.com/watch?v=ER4ivZosqCg).
+
+### [179. Largest Number](https://leetcode.com/problems/largest-number/)
+
+```
+class Solution:
+    def largestNumber(self, nums: List[int]) -> str:
+        return "".join(sorted(map(str,nums),key = lambda x: x+x, reverse = True))
+```
+cmp in Python2 now are functools.cmp_to_key
 
 ## Searching 
 
