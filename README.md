@@ -30,6 +30,7 @@ Progress: [70/1212]
 - [Algorithm](#algorithm)
   - [Sorting](#sorting)
     - [56. Merge Intervals](#56-merge-intervals)
+    - [75. Sort Colors](#75-sort-colors)
   - [Searching](#searching)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
@@ -326,6 +327,28 @@ class Solution(object):
         return ans
 ```
 Sort the intervals by their start value, then merge them one by one.
+
+### [75. Sort Colors](https://leetcode.com/problems/sort-colors/)
+```
+void sortColors(int A[], int n) {
+    int n0 = -1, n1 = -1, n2 = -1;
+    for (int i = 0; i < n; ++i) {
+        if (A[i] == 0) 
+        {
+            A[++n2] = 2; A[++n1] = 1; A[++n0] = 0;
+        }
+        else if (A[i] == 1) 
+        {
+            A[++n2] = 2; A[++n1] = 1;
+        }
+        else if (A[i] == 2) 
+        {
+            A[++n2] = 2;
+        }
+    }
+}
+```
+The Dutch National Flag Problem. Great Video [here](https://www.youtube.com/watch?v=ER4ivZosqCg).
 
 ## Searching 
 
