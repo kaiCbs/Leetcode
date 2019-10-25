@@ -50,6 +50,7 @@ Progress: [70/1212]
     - [19. Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
+    - [42. Trapping Rain Water](#42-trapping-rain-water)
   - [Binary Search](#binary-search)
     - [4. Median of Two Sorted Arrays](#4-median-of-two-sorted-arrays)
     - [50. Pow(x, n)](#50-powx-n)
@@ -645,6 +646,27 @@ class Solution:
         return idx
 ```
 Similar with [problem 26](#26-remove-duplicates-from-sorted-array). Just iterate the list, drag valid number to the head.
+
+### [42. Trapping Rain Water](https://leetcode.com/problems/trapping-rain-water/)
+```
+class Solution:
+    def trap(self, height: List[int]) -> int:
+        i, j = 0 ,len(height)-1
+        ans = 0
+        while i<j-1:
+            leftMark, rightMark = height[i], height[j]
+            if height[i] <= height[j]:
+                i+=1
+                while height[i] < leftMark:
+                    ans += (leftMark-height[i])
+                    i+=1
+            else:
+                j-=1
+                while height[j] < rightMark:
+                    ans += (rightMark-height[j])
+                    j-=1
+        return ans
+```
 
 ## Binary Search
 
