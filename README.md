@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-10-25
-Progress: [80/1212]
+Date: 2019-10-26
+Progress: [82/1212]
 
 <!-- TOC -->
 
@@ -16,6 +16,7 @@ Progress: [80/1212]
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
+    - [86. Partition List](#86-partition-list)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
     - [921. Minimum Add to Make Parentheses Valid](#921-minimum-add-to-make-parentheses-valid)
@@ -185,6 +186,29 @@ def swapPairs(self, head):
         pre = a
     return self.next
 ```
+
+### [86. Partition List](https://leetcode.com/problems/partition-list/)
+```
+class Solution:
+    def partition(self, head: ListNode, x: int) -> ListNode:
+        l1 = ListNode(1)
+        c_l1 = l1
+        l2 = ListNode(1)
+        c_l2 = l2   
+        while head:
+            if head.val < x:
+                c_l1.next = head
+                c_l1 = head
+                c_l2.next = None
+            else:
+                c_l2.next = head
+                c_l2 = head
+                c_l1.next = None
+            head = head.next
+        c_l1.next = l2.next
+        return l1.next
+```
+Dummy heads, one pass.
 
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
