@@ -61,6 +61,7 @@ Progress: [82/1212]
     - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
   - [Greedy](#greedy)
     - [55. Jump Game](#55-jump-game)
+    - [134. Gas Station](#134-gas-station)
   - [Bit Manipulation](#bit-manipulation)
     - [136. Single Number](#136-single-number)
 - [Note](#note)
@@ -846,6 +847,22 @@ class Solution(object):
                 nowMax = nowId + nums[nowId]
         return (nowMax>=des)           
 ```
+
+### [134. Gas Station](https://leetcode.com/problems/gas-station/)
+```
+class Solution:
+    def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
+        N, allGas, lowest, ans = len(gas), 0, 0, 0
+        for i in range(N):
+            allGas += (gas[i]-cost[i])
+            if allGas <= lowest:
+                lowest = allGas
+                ans = i
+        if allGas<0:
+            return -1
+        return (ans+1)%N
+```
+
 
 ## Bit Manipulation
 ### [136. Single Number](https://leetcode.com/problems/single-number/)
