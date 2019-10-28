@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-10-26
-Progress: [84/1212]
+Date: 2019-10-27
+Progress: [96/1212]
 
 <!-- TOC -->
 
