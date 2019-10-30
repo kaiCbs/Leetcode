@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-10-27
-Progress: [96/1212]
+Date: 2019-10-29
+Progress: [101/1212]
 
 <!-- TOC -->
 
@@ -30,9 +30,6 @@ Progress: [96/1212]
     - [49. Group Anagrams](#49-group-anagrams)
 - [Algorithm](#algorithm)
   - [Sorting](#sorting)
-    - [Bubble Sort](#bubble-sort)
-    - [Quick Sort](#quick-sort)
-    - [Merge Sort](#merge-sort)
     - [56. Merge Intervals](#56-merge-intervals)
     - [75. Sort Colors](#75-sort-colors)
     - [179. Largest Number](#179-largest-number)
@@ -71,7 +68,10 @@ Progress: [96/1212]
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
     - [Traverse a Tree](#traverse-a-tree)
-  - [Sorting](#sorting-1)
+  - [Sorting Algorithms](#sorting-algorithms)
+    - [Bubble Sort](#bubble-sort)
+    - [Quick Sort](#quick-sort)
+    - [Merge Sort](#merge-sort)
   - [Wheels](#wheels)
     - [prime generator](#prime-generator)
 
@@ -336,41 +336,7 @@ Use Hash table, and notice the usage of *.setdefault*
 
 # Algorithm
 
-## [Sorting](#sorting-1)
-### Bubble Sort
-```
-def bubblesort(arr):                               
-    n = len(arr)                                 
-    for i in range(n-1):                          
-        for j in range(n-i-1):                     
-            if arr[j]>arr[j+1]:                    
-                arr[j],arr[j+1] = arr[j+1],arr[j] 
-```
-### Quick Sort
-```
-def partition(arr,left,right):                     
-    pivot = arr[right]    
-    id = left          
-    while left < right:      
-        if arr[left] < pivot:   
-            arr[left], arr[id] = arr[id], arr[left]
-            id+=1                
-        left += 1        
-    arr[id], arr[right] = arr[right], arr[id]     
-    return id                                                 
-                                    
-                             
-def quicksort(lst):
-    def sortBy(lst,left,right):         
-        if left<right:                 
-            mid = partition(lst,left,right)       
-            sortBy(lst,left,mid-1)      
-            sortBy(lst,mid+1,right)              
-    sortBy(lst,0,len(lst)-1)                                 
-```
-
-
-### Merge Sort
+## [Sorting](#sorting-algorithms)
 
 ### [56. Merge Intervals](https://leetcode.com/problems/merge-intervals/)
 ```
@@ -950,7 +916,42 @@ use "^" (Caret), XOR operator
  - **Post-order** traversal is to traverse the left subtree first. Then traverse the right subtree. Finally, visit the root.
 
 
-## Sorting
+## Sorting Algorithms
+### Bubble Sort
+```
+def bubblesort(arr):                               
+    n = len(arr)                                 
+    for i in range(n-1):                          
+        for j in range(n-i-1):                     
+            if arr[j]>arr[j+1]:                    
+                arr[j],arr[j+1] = arr[j+1],arr[j] 
+```
+### Quick Sort
+```
+def partition(arr,left,right):                     
+    pivot = arr[right]    
+    id = left          
+    while left < right:      
+        if arr[left] < pivot:   
+            arr[left], arr[id] = arr[id], arr[left]
+            id+=1                
+        left += 1        
+    arr[id], arr[right] = arr[right], arr[id]     
+    return id                                                 
+                                    
+                             
+def quicksort(lst):
+    def sortBy(lst,left,right):         
+        if left<right:                 
+            mid = partition(lst,left,right)       
+            sortBy(lst,left,mid-1)      
+            sortBy(lst,mid+1,right)              
+    sortBy(lst,0,len(lst)-1)                                 
+```
+
+
+### Merge Sort
+
 
 ## Wheels
 ### prime generator
