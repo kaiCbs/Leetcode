@@ -65,6 +65,8 @@ Progress: [101/1212]
     - [134. Gas Station](#134-gas-station)
   - [Bit Manipulation](#bit-manipulation)
     - [136. Single Number](#136-single-number)
+  - [Backtracking](#backtracking)
+    - [22. Generate Parentheses](#22-generate-parentheses)
 - [Note](#note)
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
@@ -900,8 +902,21 @@ class Solution(object):
 ```
 use "^" (Caret), XOR operator
 
+## Backtracking
 
-
+### [22. Generate Parentheses](https://leetcode.com/problems/generate-parentheses/)
+```
+class Solution:
+    def generateParenthesis(self, n: int) -> List[str]:
+        def GP(l, r, cum):
+            if l == 0:
+                return [')'*r]
+            if cum == 0:
+                return ['('+c for c in GP(l-1, r, cum+1)]
+            else:
+                return ['('+ c for c in GP(l-1, r, cum+1)] + [')'+ c for c in GP(l, r-1, cum-1)]  
+        return GP(n,n,0
+```
 
 
 
