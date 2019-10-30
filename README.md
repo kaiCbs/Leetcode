@@ -915,7 +915,7 @@ class Solution:
                 return ['('+c for c in GP(l-1, r, cum+1)]
             else:
                 return ['('+ c for c in GP(l-1, r, cum+1)] + [')'+ c for c in GP(l, r-1, cum-1)]  
-        return GP(n,n,0
+        return GP(n,n,0)
 ```
 
 
