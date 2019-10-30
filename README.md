@@ -19,6 +19,7 @@ Progress: [101/1212]
     - [86. Partition List](#86-partition-list)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
+    - [20. Valid Parentheses](#20-valid-parentheses)
     - [921. Minimum Add to Make Parentheses Valid](#921-minimum-add-to-make-parentheses-valid)
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
   - [Tree and Graph](#tree-and-graph)
@@ -233,6 +234,19 @@ class Solution(object):
 [@songjiang951130](https://leetcode.com/songjiang951130/): Copy the value of next value and delete next node.
 
 ## Stack and Queue
+
+### [20. Valid Parentheses](https://leetcode.com/problems/valid-parentheses/)
+```
+class Solution:
+    def isValid(self, s: str) -> bool:
+        stk = []
+        for i in s:
+            if stk and stk[-1]+i in ['{}','[]','()']:
+                stk.pop()
+            else:
+                stk.append(i)
+        return not stk
+```
 
 ### [921. Minimum Add to Make Parentheses Valid](https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/)
 
