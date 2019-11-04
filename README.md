@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-10-29
-Progress: [101/1212]
+Date: 2019-11-04
+Progress: [110/1212]
 
 <!-- TOC -->
 
@@ -10,12 +10,14 @@ Progress: [101/1212]
   - [String](#string)
     - [6. ZigZag Conversion](#6-zigzag-conversion)
     - [8. String to Integer (atoi)](#8-string-to-integer-atoi)
+    - [722. Remove Comments](#722-remove-comments)
   - [Array](#array)
     - [48. Rotate Image](#48-rotate-image)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
+    - [25. Reverse Nodes in k-Group](#25-reverse-nodes-in-k-group)
     - [86. Partition List](#86-partition-list)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
@@ -110,6 +112,33 @@ class Solution:
 ```
 See how regular expression simplifies life.
 
+### [722. Remove Comments](https://leetcode.com/problems/remove-comments/)
+```
+class Solution:
+    def removeComments(self, source: List[str], flag = 0) -> List[str]:
+        def foo(source: List[str], flag = 0):
+            if not source:
+                return ""
+            line = source[0]
+            if flag:
+                if "*/" not in line:
+                    return foo(source[1:],1)
+                else:
+                    return foo([line[line.find('*/')+2:]] + source[1:],0)
+            else:
+                if "/*" in line or "//" in line:
+                    a = line.find('/*')
+                    b = line.find('//')
+                    if (a<b and a!=-1) or b==-1:
+                        return line[:a]+foo([line[a+2:]]+source[1:],1)
+                    else:
+                        return line[:b]+"\n"+foo(source[1:],0)
+                else:
+                    return line + "\n" + foo(source[1:],0)
+        return [i for i in foo(source, 0).split('\n') if i] 
+```
+
+
 ## Array
 ### [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 
@@ -194,6 +223,25 @@ def swapPairs(self, head):
         pre.next, b.next, a.next = b, a, b.next
         pre = a
     return self.next
+```
+
+### [25. Reverse Nodes in k-Group](https://leetcode.com/problems/reverse-nodes-in-k-group/)
+```
+class Solution:
+    def reverseKGroup(self, head: ListNode, k: int) -> ListNode:
+        if not head:
+            return None
+        newHead = None
+        marker = head
+        for i in range(k): 
+            if head == None:
+                return self.reverseKGroup(newHead,i)
+            temp = head.next
+            head.next = newHead
+            newHead = head
+            head = temp            
+        marker.next = self.reverseKGroup(head,k)
+        return newHead
 ```
 
 ### [86. Partition List](https://leetcode.com/problems/partition-list/)
