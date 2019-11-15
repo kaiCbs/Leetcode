@@ -37,6 +37,7 @@ Progress: [110/1212]
     - [75. Sort Colors](#75-sort-colors)
     - [179. Largest Number](#179-largest-number)
   - [Searching](#searching)
+    - [69. Sqrt(x)](#69-sqrtx)
   - [Dynamic programming](#dynamic-programming)
     - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
     - [39. Combination Sum](#39-combination-sum)
@@ -455,6 +456,22 @@ class Solution:
 cmp in Python2 now are functools.cmp_to_key
 
 ## Searching 
+
+### [69. Sqrt(x)](https://leetcode.com/problems/sqrtx/)
+```
+class Solution:
+    def mySqrt(self, x: int) -> int:
+        if x<2:
+            return x
+        r = x
+        while (r * r) > x:
+            a = (r*r-x)//(2*r)
+            if a==0:
+                break
+            r-=a
+        return r-1
+```
+Avoid Time Limit Exceeded, using Newton method or Binary Search.
 
 ## Dynamic programming
 
