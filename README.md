@@ -19,6 +19,7 @@ Progress: [110/1212]
     - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
     - [25. Reverse Nodes in k-Group](#25-reverse-nodes-in-k-group)
     - [86. Partition List](#86-partition-list)
+    - [160. Intersection of Two Linked Lists](#160-intersection-of-two-linked-lists)
     - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
   - [Stack and Queue](#stack-and-queue)
     - [20. Valid Parentheses](#20-valid-parentheses)
@@ -267,6 +268,31 @@ class Solution:
         return l1.next
 ```
 Dummy heads, one pass.
+
+
+### [160. Intersection of Two Linked Lists](https://leetcode.com/problems/intersection-of-two-linked-lists/)
+```
+class Solution(object):
+    def getIntersectionNode(self, headA, headB):
+        bhead = headB
+        ahead = headA
+        if not (headB and headA):
+            return None
+        while headB.next != headA.next:
+            if headA.next == None:
+                headA = bhead
+            else: 
+                headA = headA.next
+            if headB.next == None:
+                headB = ahead
+            else:
+                headB = headB.next
+        if headB == headA:
+            return headB
+        elif headB.next:
+            return headB.next
+        return None
+```
 
 ### [237. Delete Node in a Linked List](https://leetcode.com/problems/delete-node-in-a-linked-list/)
 
