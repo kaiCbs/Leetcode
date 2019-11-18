@@ -1,7 +1,7 @@
 # Table of Contents 
 
 Date: 2019-11-17
-Progress: [136/1212]
+Progress: [140/1212]
 
 <!-- TOC -->
 
@@ -13,6 +13,7 @@ Progress: [136/1212]
     - [722. Remove Comments](#722-remove-comments)
   - [Array](#array)
     - [48. Rotate Image](#48-rotate-image)
+    - [189. Rotate Array](#189-rotate-array)
   - [Linkedlist](#linkedlist)
     - [2. Add Two Numbers](#2-add-two-numbers)
     - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
@@ -152,6 +153,24 @@ class Solution:
         Do not return anything, modify matrix in-place instead.
         """
         matrix[:] = [[r[i]for r in matrix[::-1]] for i in range(len(matrix))] 
+```
+### [189. Rotate Array](https://leetcode.com/problems/rotate-array/)
+
+```
+        def GCD(x, y): 
+            while (y): 
+                x, y = y, x % y 
+            return x
+        size = len(nums)
+        loop = GCD(size,k)
+        for i in range(loop):
+            temp = nums[i]
+            j = (i-k)%size
+            nums[i] = nums[j]
+            while j!=i:
+                nums[j] = nums[(j-k)%size]
+                j = (j-k)%size
+            nums[(j+k)%size] = temp
 ```
 
 
