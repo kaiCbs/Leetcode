@@ -1,7 +1,7 @@
 # Table of Contents 
 
 Date: 2019-11-17
-Progress: [134/1212]
+Progress: [136/1212]
 
 <!-- TOC -->
 
@@ -27,6 +27,7 @@ Progress: [134/1212]
     - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
   - [Tree and Graph](#tree-and-graph)
     - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
+    - [111. Minimum Depth of Binary Tree](#111-minimum-depth-of-binary-tree)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Heap](#heap)
   - [Hash Table](#hash-table)
@@ -377,6 +378,17 @@ class Solution:
         if (root.val >= ma) or (root.val <= mi):
             return False
         return self.isValidBST(root.left,mi,root.val) and self.isValidBST(root.right,root.val,ma)
+```
+### [111. Minimum Depth of Binary Tree](https://leetcode.com/problems/minimum-depth-of-binary-tree/)
+
+```
+class Solution:
+    def minDepth(self, root: TreeNode, flag=1) -> int:
+        if root:
+            if not (root.left or root.right): return 1
+            return min([self.minDepth(leaf) for leaf in [root.left,root.right] if leaf])+1
+        else:
+            return 0
 ```
 
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
