@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-11-17
-Progress: [140/1212]
+Date: 2019-11-19
+Progress: [154/1212]
 
 <!-- TOC -->
 
@@ -29,6 +29,7 @@ Progress: [140/1212]
   - [Tree and Graph](#tree-and-graph)
     - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
     - [111. Minimum Depth of Binary Tree](#111-minimum-depth-of-binary-tree)
+    - [404. Sum of Left Leaves](#404-sum-of-left-leaves)
     - [938. Range Sum of BST](#938-range-sum-of-bst)
   - [Heap](#heap)
   - [Hash Table](#hash-table)
@@ -408,6 +409,22 @@ class Solution:
             return min([self.minDepth(leaf) for leaf in [root.left,root.right] if leaf])+1
         else:
             return 0
+```
+
+### [404. Sum of Left Leaves](https://leetcode.com/problems/sum-of-left-leaves/)
+```
+class Solution(object):
+    def sumOfLeftLeaves(self, root, label=0):
+        """
+        :type root: TreeNode
+        :rtype: int
+        """
+        if not root:
+            return 0
+        if label and (not (root.left or root.right)):
+            return root.val
+        else:
+            return self.sumOfLeftLeaves(root.left,1)+self.sumOfLeftLeaves(root.right,0)
 ```
 
 ### [938. Range Sum of BST](https://leetcode.com/problems/range-sum-of-bst/)
