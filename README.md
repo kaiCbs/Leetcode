@@ -1,7 +1,7 @@
 # Table of Contents 
 
-Date: 2019-11-19
-Progress: [163/1212]
+Date: 2019-12-05
+Progress: [171/1212]
 
 <!-- TOC -->
 
@@ -58,6 +58,7 @@ Progress: [163/1212]
     - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
     - [11. Container With Most Water](#11-container-with-most-water)
     - [15. 3Sum](#15-3sum)
+    - [18. 4 Sum](#18-4-sum)
     - [19. Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
     - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
     - [27. Remove Element](#27-remove-element)
@@ -74,6 +75,7 @@ Progress: [163/1212]
     - [136. Single Number](#136-single-number)
   - [Backtracking](#backtracking)
     - [22. Generate Parentheses](#22-generate-parentheses)
+    - [40. Combination Sum II](#40-combination-sum-ii)
 - [Note](#note)
   - [Trees](#trees)
     - [Binary Search Tree](#binary-search-tree)
@@ -145,6 +147,7 @@ class Solution:
 
 
 ## Array
+
 ### [48. Rotate Image](https://leetcode.com/problems/rotate-image/)
 
 ```
@@ -814,6 +817,43 @@ class Solution(object):
 ```
 Time complexity O(n^2)
 
+### [18. 4 Sum](https://leetcode.com/problems/4sum/)
+```
+class Solution:
+    def fourSum(self, nums: List[int], target: int) -> List[List[int]]:
+        ans = []
+        nums.sort()
+        if len(nums)<4:
+            return ans
+        def threeSum(nums,target):
+            res = []
+            for i in range(len(nums)-2):
+                if i > 0 and nums[i] == nums[i-1]:
+                    continue
+                l, r = i+1, len(nums)-1
+                while l < r:
+                    s = nums[i] + nums[l] + nums[r]
+                    if s < target:
+                        l +=1 
+                    elif s > target:
+                        r -= 1
+                    else:
+                        res.append([nums[i], nums[l], nums[r]])
+                        while l < r and nums[l] == nums[l+1]:
+                            l += 1
+                        while l < r and nums[r] == nums[r-1]:
+                            r -= 1
+                        l += 1; r -= 1
+            return res
+        for i in range(len(nums)-3):
+            if i > 0 and nums[i] == nums[i-1]:
+                continue
+            ans += [[nums[i]] + sum3 for sum3 in threeSum(nums[i+1:],target-nums[i])]
+        return ans
+```
+My solution is tedious, but the idea is to turn it into 3-sum sub question.
+
+
 ### [19. Remove Nth Node From End of List](https://leetcode.com/problems/remove-nth-node-from-end-of-list/)
 ```
 class Solution:
@@ -1057,6 +1097,26 @@ class Solution:
         return GP(n,n,0)
 ```
 
+### [40. Combination Sum II](https://leetcode.com/problems/combination-sum-ii/)
+
+```
+class Solution:
+    def combinationSum2(self, candidates: List[int], target: int) -> List[List[int]]:
+        if target < 0:
+            return []
+        elif target == 0:
+            return [[]]
+        if candidates==[]:
+            return []
+        ans = [[candidates[0]]+i for i in 
+                self.combinationSum2(candidates[1:],target-candidates[0])] + self.combinationSum2(candidates[1:],target)
+        res = []
+        for i in ans:
+            i.sort()
+            if i not in res:
+                res.append(i)
+        return res
+```
 
 
 
