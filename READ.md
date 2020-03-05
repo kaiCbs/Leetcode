@@ -1,14 +1,14 @@
-# Table of Contents 
+# Progress
 
 Date: 2020-03-05
 Progress: [198/1212]
 
-## Data structure]
-  - [String](#string)
-    - [6. ZigZag Conversion](#6-zigzag-conversion)
-    - [8. String to Integer (atoi)](#8-string-to-integer-atoi)
-    - [722. Remove Comments](#722-remove-comments)
-  - [Array](#array)
+## Data structure
+  - [String]
+    - [6. ZigZag Conversion](https://github.com/kaiCbs/Leetcode/blob/master/code/string-to-integer-atoi.py)
+    - [8. String to Integer (atoi)](https://github.com/kaiCbs/Leetcode/blob/master/code/zigzag-conversion.py)
+    - [722. Remove Comments](https://github.com/kaiCbs/Leetcode/blob/master/code/remove-comments.py)
+  - [Array]
     - [48. Rotate Image](#48-rotate-image)
     - [189. Rotate Array](#189-rotate-array)
   - [Linkedlist](#linkedlist)
