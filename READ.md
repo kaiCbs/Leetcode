@@ -10,12 +10,14 @@ Progress: [198/1212]
     - [12. Integer to Roman](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/integer-to-roman.py)
     - [13. Roman to Integer](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/roman-to-integer.py)
     - [14. Longest Common Prefix](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/longest-common-prefix.py)
-    - [722. Remove Comments](https://github.com/kaiCbs/Leetcode/blob/master/code/remove-comments.py)
+    - [38. Count and Say](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/count-and-say.py)
+    - [43. Multiply Strings](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/multiply-strings.py)
 
   - Array
     - [26. Remove Duplicates from Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-duplicates-from-sorted-array.py)
     - [27. Remove Element](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-element.py)
     - [189. Rotate Array](https://github.com/kaiCbs/Leetcode/blob/master/code/rotate-array.py)
+    - [41. First Missing Positive](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/first-missing-positive.py)
 
   - Linkedlist
     - [2. Add Two Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/add-two-numbers.py)
@@ -35,30 +37,24 @@ Progress: [198/1212]
   - Hash Table
     - [1. Two Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/two-sum.py)
 
-## Algorithm
-  - Sorting
-
-  - Searching
+## Algorithm & Topics
 
   - Dynamic programming
     - [5. Longest Palindromic Substring](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-palindromic-substring.py)
  
-  - Graph Theory
-
-## Topics
   - Two pointers
     - [3. Longest Substring Without Repeating Characters](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-substring-without-repeating-characters.py)
     - [11. Container With Most Water](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/container-with-most-water.py)
     - [15. 3Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/3sum.py)
     - [16. 3Sum Closet](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/3sum-closest.py)
     - [18. 4Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/4sum.py)
+    - [42. Trapping Rain Water](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/trapping-rain-water.py)
 
   - Binary Search
     - [4. Median of Two Sorted Arrays](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/median-of-two-sorted-arrays.py)
     - [29. Divide Two Integers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/divide-two-integers.py)
     - [34. Find First and Last Position of Element in Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/find-first-and-last-position-of-element-in-sorted-array.py)
     - [35. Search Insert Position](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/search-insert-position.py)
-
 
   - Greedy
 
@@ -67,9 +63,13 @@ Progress: [198/1212]
   - Backtracking
     - [17. Letter Combinations of a Phone Number](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/letter-combinations-of-a-phone-number.py) 
     - [22. Generate Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/generate-parentheses.py)
+    - [39. Combination Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combination-sum.py)
+    - [40. Combination Sum II](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combination-sum-ii.py)
+    - [46. Permutations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/permutations.py)
 
   - Math
     - [7. Reverse Integer](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/reverse-integer.py)
     - [9. Palindrome Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/palindrome-number.py)
+    - [36. Valid Sudoku](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/valid-sudoku.py)
 
 https://github.com/kaiCbs/Leetcode/blob/master/code/.py
