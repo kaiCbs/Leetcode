@@ -21,6 +21,7 @@ Progress: [198/1212]
     - [41. First Missing Positive](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/first-missing-positive.py)
     - [48. Rotate Image](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/rotate-image.py)
     - [66. Plus One](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/plus-one.py)
+    - [118. Pascal's Triangle](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/pascals-triangle.py)
 
   - Linkedlist
     - [2. Add Two Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/add-two-numbers.py)
@@ -29,13 +30,22 @@ Progress: [198/1212]
     - [23. Merge k Sorted Lists](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/merge-k-sorted-lists.py)
     - [24. Swap Nodes in Pairs](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/swap-nodes-in-pairs.py)
     - [25. Reverse Nodes in k-Group](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/reverse-nodes-in-k-group.py)
+    - [83. Remove Duplicates from Sorted List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-duplicates-from-sorted-list.py)
+    - [86. Partition List](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/partition-list.py)
 
   - Stack and Queue
     - [20. Valid Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/valid-parentheses.py)
 
-  - Tree and Graph
-    
-  - Heap
+  - Tree, Heap and Graph
+    - [98. Validate Binary Search Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/validate-binary-search-tree.py)
+    - [100. Same Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/same-tree.py)
+    - [101. Symmetric Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/symmetric-tree.py)
+    - [104. Maximum Depth of Binary Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/maximum-depth-of-binary-tree.py)
+    - [107. Binary Tree Level Order Traversal II](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/binary-tree-level-order-traversal-ii.py)
+    - [108. Convert Sorted Array to Binary Search Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/convert-sorted-array-to-binary-search-tree.py)
+    - [110. Balanced Binary Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/balanced-binary-tree.py)
+    - [111. Minimum Depth of Binary Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/minimum-depth-of-binary-tree.py)
+    - [112. Path Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/path-sum.py)
 
   - Hash Table
     - [1. Two Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/two-sum.py)
@@ -43,8 +53,8 @@ Progress: [198/1212]
 
 ## Algorithm & Topics
   - Sort
-    [56. Merge Intervals](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/merge-intervals.py)
-    [75. Sort Colors]()
+    - [56. Merge Intervals](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/merge-intervals.py)
+    - [75. Sort Colors](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sort-colors.py)
 
   - Dynamic programming
     - [5. Longest Palindromic Substring](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-palindromic-substring.py)
@@ -59,6 +69,7 @@ Progress: [198/1212]
     - [16. 3Sum Closet](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/3sum-closest.py)
     - [18. 4Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/4sum.py)
     - [42. Trapping Rain Water](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/trapping-rain-water.py)
+    - [88. Merge Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/merge-sorted-array.py)
 
   - Binary Search
     - [4. Median of Two Sorted Arrays](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/median-of-two-sorted-arrays.py)
@@ -79,6 +90,9 @@ Progress: [198/1212]
     - [39. Combination Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combination-sum.py)
     - [40. Combination Sum II](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combination-sum-ii.py)
     - [46. Permutations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/permutations.py)
+    - [77. Combinations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combinations.py)
+    - [78. Subsets](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/subsets.py)
+    - [93. Restore IP Addresses](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/restore-ip-addresses.py)
 
   - Math
     - [7. Reverse Integer](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/reverse-integer.py)
