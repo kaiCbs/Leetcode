@@ -6,8 +6,7 @@ Progress: [198/1212]
 ## Data structure
   - String
     - [6. ZigZag Conversion](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/zigzag-conversion.py)
-    - [8. String to Integer (atoi)](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/string-to-integer-atoi.py)
-    
+    - [8. String to Integer (atoi)](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/string-to-integer-atoi.py) 
     - [12. Integer to Roman](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/integer-to-roman.py)
     - [13. Roman to Integer](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/roman-to-integer.py)
     - [14. Longest Common Prefix](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/longest-common-prefix.py)
@@ -57,8 +56,7 @@ Progress: [198/1212]
   - Binary Search
     - [4. Median of Two Sorted Arrays](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/median-of-two-sorted-arrays.py)
     - [29. Divide Two Integers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/divide-two-integers.py)
-    - [34. Find First and Last Position of Element in Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/
-    find-first-and-last-position-of-element-in-sorted-array.py)
+    - [34. Find First and Last Position of Element in Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/find-first-and-last-position-of-element-in-sorted-array.py)
     - [35. Search Insert Position](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/search-insert-position.py)
 
 
