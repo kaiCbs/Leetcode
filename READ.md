@@ -4,82 +4,38 @@ Date: 2020-03-05
 Progress: [198/1212]
 
 ## Data structure
-  - [String]
+  - String
     - [6. ZigZag Conversion](https://github.com/kaiCbs/Leetcode/blob/master/code/string-to-integer-atoi.py)
-    - [8. String to Integer (atoi)](https://github.com/kaiCbs/Leetcode/blob/master/code/zigzag-conversion.py)
+    - [8. String to Integer (atoi)](https://github.com/kaiCbs/Leetcode/blob/master/code/string-to-integer-atoi.py)
     - [722. Remove Comments](https://github.com/kaiCbs/Leetcode/blob/master/code/remove-comments.py)
-  - [Array]
-    - [48. Rotate Image](#48-rotate-image)
-    - [189. Rotate Array](#189-rotate-array)
-  - [Linkedlist](#linkedlist)
-    - [2. Add Two Numbers](#2-add-two-numbers)
-    - [21. Merge Two Sorted Lists](#21-merge-two-sorted-lists)
-    - [24. Swap Nodes in Pairs](#24-swap-nodes-in-pairs)
-    - [25. Reverse Nodes in k-Group](#25-reverse-nodes-in-k-group)
-    - [86. Partition List](#86-partition-list)
-    - [160. Intersection of Two Linked Lists](#160-intersection-of-two-linked-lists)
-    - [237. Delete Node in a Linked List](#237-delete-node-in-a-linked-list)
-  - [Stack and Queue](#stack-and-queue)
-    - [20. Valid Parentheses](#20-valid-parentheses)
-    - [921. Minimum Add to Make Parentheses Valid](#921-minimum-add-to-make-parentheses-valid)
-    - [1021. Remove Outermost Parentheses](#1021-remove-outermost-parentheses)
-  - [Tree and Graph](#tree-and-graph)
-    - [98. Validate Binary Search Tree](#98-validate-binary-search-tree)
-    - [111. Minimum Depth of Binary Tree](#111-minimum-depth-of-binary-tree)
-    - [404. Sum of Left Leaves](#404-sum-of-left-leaves)
-    - [938. Range Sum of BST](#938-range-sum-of-bst)
-  - [Heap](#heap)
-  - [Hash Table](#hash-table)
-    - [1. Two Sum](#1-two-sum)
-    - [49. Group Anagrams](#49-group-anagrams)
+  - Array
+    - [189. Rotate Array](https://github.com/kaiCbs/Leetcode/blob/master/code/rotate-array.py)
+  - Linkedlist
+    - [2. Add Two Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/add-two-numbers.py)
+  - Stack and Queue
+    
+  - Tree and Graph
+    
+  - Heap
+  - Hash Table
+    - [1. Two Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/two-sum.py)
 ## Algorithm
-  - [Sorting](#sorting)
-    - [56. Merge Intervals](#56-merge-intervals)
-    - [75. Sort Colors](#75-sort-colors)
-    - [179. Largest Number](#179-largest-number)
-  - [Searching](#searching)
-    - [69. Sqrt(x)](#69-sqrtx)
-  - [Dynamic programming](#dynamic-programming)
-    - [5. Longest Palindromic Substring](#5-longest-palindromic-substring)
-    - [39. Combination Sum](#39-combination-sum)
-    - [53. Maximum Subarray](#53-maximum-subarray)
-    - [120. Triangle](#120-triangle)
-    - [121. Best Time to Buy and Sell Stock](#121-best-time-to-buy-and-sell-stock)
-    - [198. House Robber](#198-house-robber)
-    - [303. Range Sum Query - Immutable](#303-range-sum-query---immutable)
-    - [338. Counting Bits](#338-counting-bits)
-    - [746. Min Cost Climbing Stairs](#746-min-cost-climbing-stairs)
-  - [Graph Theory](#graph-theory)
-- [Topics](#topics)
-  - [Two pointers](#two-pointers)
-    - [3. Longest Substring Without Repeating Characters](#3-longest-substring-without-repeating-characters)
-    - [11. Container With Most Water](#11-container-with-most-water)
-    - [15. 3Sum](#15-3sum)
-    - [18. 4 Sum](#18-4-sum)
-    - [19. Remove Nth Node From End of List](#19-remove-nth-node-from-end-of-list)
-    - [26. Remove Duplicates from Sorted Array](#26-remove-duplicates-from-sorted-array)
-    - [27. Remove Element](#27-remove-element)
-    - [42. Trapping Rain Water](#42-trapping-rain-water)
-  - [Binary Search](#binary-search)
-    - [4. Median of Two Sorted Arrays](#4-median-of-two-sorted-arrays)
-    - [50. Pow(x, n)](#50-powx-n)
-    - [278. First Bad Version](#278-first-bad-version)
-    - [852. Peak Index in a Mountain Array](#852-peak-index-in-a-mountain-array)
-  - [Greedy](#greedy)
-    - [55. Jump Game](#55-jump-game)
-    - [134. Gas Station](#134-gas-station)
-  - [Bit Manipulation](#bit-manipulation)
-    - [136. Single Number](#136-single-number)
-  - [Backtracking](#backtracking)
-    - [22. Generate Parentheses](#22-generate-parentheses)
-    - [40. Combination Sum II](#40-combination-sum-ii)
-## Note
-  - [Trees](#trees)
-    - [Binary Search Tree](#binary-search-tree)
-    - [Traverse a Tree](#traverse-a-tree)
-  - [Sorting Algorithms](#sorting-algorithms)
-    - [Bubble Sort](#bubble-sort)
-    - [Quick Sort](#quick-sort)
-    - [Merge Sort](#merge-sort)
-  - [Wheels](#wheels)
-    - [prime generator](#prime-generator)
+  - Sorting
+
+  - Searching
+
+  - Dynamic programming
+ 
+  - Graph Theory
+
+## Topics
+  - Two pointers
+    - [3. Longest Substring Without Repeating Characters](https://github.com/kaiCbs/Leetcode/blob/master/code/longest-substring-without-repeating-characters.py)
+  
+  - Binary Search
+
+  - Greedy
+
+  - Bit Manipulation
+
+  - Backtracking
