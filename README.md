@@ -23,6 +23,8 @@ Progress: [177/1256]
     - [709. To Lower Case](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/to-lower-case.py)
     - [722. Remove Comments](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/remove-comments.py)
     - [804. Unique Morse Code Words](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/unique-morse-code-words.py)
+    - [1108. Defanging an IP Address](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/defanging-an-ip-address.py)
+    - [1177. Can Make Palindrome from Substring](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/can-make-palindrome-from-substring.py)
 
   - Array
     - [26. Remove Duplicates from Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-duplicates-from-sorted-array.py)
@@ -37,6 +39,8 @@ Progress: [177/1256]
     - [414. Third Maximum Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/third-maximum-number.py)
     - [561. Array Partition I](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/array-partition-i.py)
     - [832. Flipping an Image](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/flipping-an-image.py)
+    - [905. Sort Array By Parity](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/sort-array-by-parity.py)
+    - [1051. Height Checker](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/height-checker.py)
 
 
   - Linkedlist
@@ -52,12 +56,15 @@ Progress: [177/1256]
     - [203. Remove Linked List Elements](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-linked-list-elements.py)
     - [206. Reverse Linked List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/reverse-linked-list.py)
     - [237. Delete Node in a Linked List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/delete-node-in-a-linked-list.py)
+    - [876. Middle of the Linked List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/middle-of-the-linked-list.py)
 
   - Stack and Queue
     - [20. Valid Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/valid-parentheses.py)
     - [155. Min Stack](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/min-stack.py)
     - [225. Implement Stack using Queues](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-stack-using-queues.py)
     - [232. Implement Queue using Stacks](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-queue-using-stacks.py)
+    - [921. Minimum Add to Make Parentheses Valid](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/minimum-add-to-make-parentheses-valid.py)
+    - [1021. Remove Outermost Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-outermost-parentheses.py)
 
 
   - Tree, Heap and Graph
@@ -75,6 +82,8 @@ Progress: [177/1256]
     - [257. Binary Tree Paths](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/binary-tree-paths.py)
     - [264. Ugly Number II](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/ugly-number-ii.py)
     - [404. Sum of Left Leaves](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sum-of-left-leaves.py)
+    - [938. Range Sum of BST](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/range-sum-of-bst.py)
+    - [1302. Deepest Leaves Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/deepest-leaves-sum.py)
 
   - Hash Table
     - [1. Two Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/two-sum.py)
@@ -90,6 +99,10 @@ Progress: [177/1256]
     - [409. Longest Palindrome](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/longest-palindrome.py)
     - [535. Encode and Decode TinyURL](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/encode-and-decode-tinyurl.py)
     - [771. Jewels and Stones](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/jewels-and-stones.py)
+    - [961. N-Repeated Element in Size 2N Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/n-repeated-element-in-size-2n-array.py)
+    - [1002. Find Common Characters](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/find-common-characters.py)
+    - [1160. Find Words That Can Be Formed by Characters](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/find-words-that-can-be-formed-by-characters.py)
+    - [1207. Unique Number of Occurrences](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/unique-number-of-occurrences.py)
 
 
 ## Algorithm & Topics
@@ -97,6 +110,8 @@ Progress: [177/1256]
     - [56. Merge Intervals](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/merge-intervals.py)
     - [75. Sort Colors](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sort-colors.py)
     - [179. Largest Number](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/largest-number.py)
+    - [912. Sort an Array](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sort-an-array.py)
+    - [973. K Closest Points to Origin](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/k-closest-points-to-origin.py)
 
 
   - Dynamic programming
@@ -110,6 +125,7 @@ Progress: [177/1256]
     - [303. Range Sum Query - Immutable](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/range-sum-query-immutable.py)
     - [392. Is Subsequence](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/is-subsequence.py)
     - [746. Min Cost Climbing Stairs](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/min-cost-climbing-stairs.py)
+    - [1143. Longest Common Subsequence](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-common-subsequence.py)
 
   - Two pointers
     - [3. Longest Substring Without Repeating Characters](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-substring-without-repeating-characters.py)
@@ -122,6 +138,7 @@ Progress: [177/1256]
     - [141. Linked List Cycle](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/linked-list-cycle.py)
     - [234. Palindrome Linked List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/palindrome-linked-list.py)
     - [283. Move Zeroes](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/move-zeroes.py)
+    - [977. Squares of a Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/squares-of-a-sorted-array.py)
 
   - Binary Search
     - [4. Median of Two Sorted Arrays](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/median-of-two-sorted-arrays.py)
@@ -136,12 +153,19 @@ Progress: [177/1256]
     - [350. Intersection of Two Arrays II](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/intersection-of-two-arrays-ii.py)
     - [367. Valid Perfect Square](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/valid-perfect-square.py)
     - [374. Guess Number Higher or Lower](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/guess-number-higher-or-lower.py)
+    - [852. Peak Index in a Mountain Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/peak-index-in-a-mountain-array.py)
 
   - Greedy
     - [55. Jump Game](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/jump-game.py)
     - [122. Best Time to Buy and Sell Stock II](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/best-time-to-buy-and-sell-stock-ii.py)
     - [134. Gas Station](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/gas-station.py)
     - [455. Assign Cookies](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/assign-cookies.py)
+    - [860. Lemonade Change](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/lemonade-change.py)
+    - [861. Score After Flipping Matrix](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/score-after-flipping-matrix.py)
+    - [944. Delete Columns to Make Sorted](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/delete-columns-to-make-sorted.py)
+    - [1046. Last Stone Weight](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/last-stone-weight.py)
+    - [1221. Split a String in Balanced Strings](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/split-a-string-in-balanced-strings.py)
+    - [1282. Group the People Given the Group Size They Belong To](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/group-the-people-given-the-group-size-they-belong-to.py)
 
   - Bit Manipulation
     - [136. Single Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/single-number.py)
@@ -182,5 +206,5 @@ Progress: [177/1256]
     - [509. Fibonacci Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/fibonacci-number.py)
     - [657. Robot Return to Origin](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/robot-return-to-origin.py)
     - [728. Self Dividing Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/self-dividing-numbers.py)
-    - [807. Max Increase to Keep City Skyline](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/max-increase-to-keep-city-skyline.py)
-
+    - [807. Max Increase to Keep City Skyline](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/max-increase-to-keep-city-skyline.py)
+    - [1025. Divisor Game](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/divisor-game.py)
