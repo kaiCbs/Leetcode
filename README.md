@@ -1,7 +1,7 @@
 ## Progress
 
-Date: 2020-03-05
-Progress: [198/1212]
+Date: 2020-03-06
+Progress: [177/1256]
 
 ## Data structure
   - String
@@ -36,6 +36,7 @@ Progress: [198/1212]
     - [238. Product of Array Except Self](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/product-of-array-except-self.py)
     - [414. Third Maximum Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/third-maximum-number.py)
     - [561. Array Partition I](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/array-partition-i.py)
+    - [832. Flipping an Image](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/flipping-an-image.py)
 
 
   - Linkedlist
@@ -181,4 +182,5 @@ Progress: [198/1212]
     - [509. Fibonacci Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/fibonacci-number.py)
     - [657. Robot Return to Origin](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/robot-return-to-origin.py)
     - [728. Self Dividing Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/self-dividing-numbers.py)
+    - [807. Max Increase to Keep City Skyline](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/max-increase-to-keep-city-skyline.py)
 
