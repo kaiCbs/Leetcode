@@ -87,6 +87,7 @@ Progress: [178/1256]
 
   - Hash Table
     - [1. Two Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/two-sum.py)
+    - [30. Substring with Concatenation of All Words](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/substring-with-concatenation-of-all-words.py)
     - [49. Group Anagrams](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/group-anagrams.py)
     - [202. Happy Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/happy-number.py)
     - [205. Isomorphic Strings](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/isomorphic-strings.py)
