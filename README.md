@@ -29,6 +29,7 @@ Progress: [178/1256]
   - Array
     - [26. Remove Duplicates from Sorted Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-duplicates-from-sorted-array.py)
     - [27. Remove Element](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-element.py)
+    - [31. Next Permutation](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/next-permutation.py)
     - [41. First Missing Positive](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/first-missing-positive.py)
     - [48. Rotate Image](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/rotate-image.py)
     - [66. Plus One](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/plus-one.py)
@@ -41,7 +42,6 @@ Progress: [178/1256]
     - [832. Flipping an Image](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/flipping-an-image.py)
     - [905. Sort Array By Parity](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/sort-array-by-parity.py)
     - [1051. Height Checker](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/height-checker.py)
-
 
   - Linkedlist
     - [2. Add Two Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/add-two-numbers.py)
@@ -65,7 +65,6 @@ Progress: [178/1256]
     - [232. Implement Queue using Stacks](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-queue-using-stacks.py)
     - [921. Minimum Add to Make Parentheses Valid](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/minimum-add-to-make-parentheses-valid.py)
     - [1021. Remove Outermost Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-outermost-parentheses.py)
-
 
   - Tree, Heap and Graph
     - [98. Validate Binary Search Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/validate-binary-search-tree.py)
