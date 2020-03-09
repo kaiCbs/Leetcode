@@ -60,6 +60,7 @@ Progress: [180/1264]
 
   - Stack and Queue
     - [20. Valid Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/valid-parentheses.py)
+    - [32. Longest Valid Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/longest-valid-parentheses.py)
     - [155. Min Stack](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/min-stack.py)
     - [225. Implement Stack using Queues](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-stack-using-queues.py)
     - [232. Implement Queue using Stacks](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-queue-using-stacks.py)
