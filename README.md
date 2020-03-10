@@ -125,6 +125,7 @@ Progress: [180/1264]
     - [121. Best Time to Buy and Sell Stock](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/best-time-to-buy-and-sell-stock.py)
     - [198. House Robber](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/house-robber.py)
     - [303. Range Sum Query - Immutable](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/range-sum-query-immutable.py)
+    - [312. Burst Balloons](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/burst-balloons.py)
     - [392. Is Subsequence](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/is-subsequence.py)
     - [746. Min Cost Climbing Stairs](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/min-cost-climbing-stairs.py)
     - [1143. Longest Common Subsequence](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/longest-common-subsequence.py)
