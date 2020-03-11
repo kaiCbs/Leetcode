@@ -182,6 +182,7 @@ Progress: [180/1264]
     - [389. Find the Difference](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/find-the-difference.py)
     - [401. Binary Watch](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/binary-watch.py)
     - [461. Hamming Distance](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/hamming-distance.py)
+    - [1342. Number of Steps to Reduce a Number to Zero](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/number-of-steps-to-reduce-a-number-to-zero.py)
 
   - Backtracking
     - [17. Letter Combinations of a Phone Number](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/letter-combinations-of-a-phone-number.py) 
