@@ -111,6 +111,8 @@ Progress: [198/1378]
 
 ## Algorithm & Topics
 
+### Search
+
 ### Sort
   - [56. Merge Intervals](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/merge-intervals.py)
   - [75. Sort Colors](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sort-colors.py)
