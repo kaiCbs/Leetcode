@@ -42,6 +42,7 @@ Progress: [180/1264]
     - [832. Flipping an Image](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/flipping-an-image.py)
     - [905. Sort Array By Parity](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/sort-array-by-parity.py)
     - [1051. Height Checker](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/height-checker.py)
+    - [1365. How Many Numbers Are Smaller Than the Current Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/how-many-numbers-are-smaller-than-the-current-number.py)
 
   - Linkedlist
     - [2. Add Two Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/add-two-numbers.py)
