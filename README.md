@@ -208,6 +208,7 @@ Progress: [212/1383]
 - [40. Combination Sum II](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combination-sum-ii.py)
 - [46. Permutations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/permutations.py)
 - [51. N-Queens](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/n-queens.py)
+- [52. N-Queens II](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/n-queens-ii.py)
 - [77. Combinations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combinations.py)
 - [78. Subsets](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/subsets.py)
 - [93. Restore IP Addresses](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/restore-ip-addresses.py)
