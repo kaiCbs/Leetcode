@@ -27,6 +27,7 @@ Progress: [212/1383]
 - [804. Unique Morse Code Words](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/unique-morse-code-words.py)
 - [1108. Defanging an IP Address](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/defanging-an-ip-address.py)
 - [1177. Can Make Palindrome from Substring](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/can-make-palindrome-from-substring.py)
+- [1408. String Matching in an Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/string-matching-in-an-array.py)
 
 ### Array
 
@@ -121,6 +122,7 @@ Progress: [212/1383]
 ### Sort
 
 - [56. Merge Intervals](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/merge-intervals.py)
+- [57. Insert Interval](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/insert-interval.py)
 - [75. Sort Colors](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sort-colors.py)
 - [179. Largest Number](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/largest-number.py)
 - [899. Orderly Queue](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/orderly-queue.py)
@@ -209,7 +211,6 @@ Progress: [212/1383]
 - [46. Permutations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/permutations.py)
 - [51. N-Queens](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/n-queens.py)
 - [52. N-Queens II](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/n-queens-ii.py)
-- [57. Insert Interval](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/insert-interval.py)
 - [77. Combinations](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/combinations.py)
 - [78. Subsets](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/subsets.py)
 - [93. Restore IP Addresses](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/restore-ip-addresses.py)
