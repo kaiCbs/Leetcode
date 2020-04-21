@@ -28,6 +28,7 @@ Progress: [212/1383]
 - [1108. Defanging an IP Address](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/defanging-an-ip-address.py)
 - [1177. Can Make Palindrome from Substring](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/can-make-palindrome-from-substring.py)
 - [1408. String Matching in an Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/string-matching-in-an-array.py)
+- [1410. HTML Entity Parser](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/html-entity-parser.py)
 
 ### Array
 
@@ -48,6 +49,7 @@ Progress: [212/1383]
 - [1051. Height Checker](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/height-checker.py)
 - [1313. Decompress Run-Length Encoded List](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/decompress-run-length-encoded-list.py)
 - [1365. How Many Numbers Are Smaller Than the Current Number](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/how-many-numbers-are-smaller-than-the-current-number.py)
+- [1409. Queries on a Permutation With Key](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/queries-on-a-permutation-with-key.py)
 
 ### Linkedlist
 
