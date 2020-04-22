@@ -1,7 +1,7 @@
 ## Progress
 
-Date: 2020-04-13
-Progress: [212/1383]
+Date: 2020-04-21
+Progress: [213/1383]
 
 ## Data structure
 
@@ -74,6 +74,7 @@ Progress: [212/1383]
 - [155. Min Stack](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/min-stack.py)
 - [225. Implement Stack using Queues](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-stack-using-queues.py)
 - [232. Implement Queue using Stacks](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/implement-queue-using-stacks.py)
+- [844. Backspace String Compare](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/backspace-string-compare.py)
 - [921. Minimum Add to Make Parentheses Valid](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/minimum-add-to-make-parentheses-valid.py)
 - [1021. Remove Outermost Parentheses](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/remove-outermost-parentheses.py)
 
@@ -93,6 +94,7 @@ Progress: [212/1383]
 - [257. Binary Tree Paths](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/binary-tree-paths.py)
 - [264. Ugly Number II](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/ugly-number-ii.py)
 - [404. Sum of Left Leaves](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/sum-of-left-leaves.py)
+- [543. Diameter of Binary Tree](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/diameter-of-binary-tree.py)
 - [938. Range Sum of BST](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/range-sum-of-bst.py)
 - [1302. Deepest Leaves Sum](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/deepest-leaves-sum.py)
 
@@ -239,4 +241,5 @@ Progress: [212/1383]
 - [728. Self Dividing Numbers](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/self-dividing-numbers.py)
 - [807. Max Increase to Keep City Skyline](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/max-increase-to-keep-city-skyline.py)
 - [1025. Divisor Game](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/divisor-game.py)
-- [1304. Find N Unique Integers Sum up to Zero](https://github.com/kaiCbs/Leetcode/blob/master/code/easyind-n-unique-integers-sum-up-to-zero)
+- [1304. Find N Unique Integers Sum up to Zero](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/ind-n-unique-integers-sum-up-to-zero)
+- [1411. Number of Ways to Paint N × 3 Grid](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/number-of-ways-to-paint-n-3-grid.py)
