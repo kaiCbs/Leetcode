@@ -112,6 +112,7 @@ Progress: [213/1383]
 - [299. Bulls and Cows](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/bulls-and-cows.py)
 - [387. First Unique Character in a String](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/first-unique-character-in-a-string.py)
 - [409. Longest Palindrome](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/longest-palindrome.py)
+- [525. Contiguous Array](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/contiguous-array.py)
 - [535. Encode and Decode TinyURL](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/encode-and-decode-tinyurl.py)
 - [771. Jewels and Stones](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/jewels-and-stones.py)
 - [961. N-Repeated Element in Size 2N Array](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/n-repeated-element-in-size-2n-array.py)
