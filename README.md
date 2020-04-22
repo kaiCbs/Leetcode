@@ -37,6 +37,7 @@ Progress: [213/1383]
 - [31. Next Permutation](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/next-permutation.py)
 - [41. First Missing Positive](https://github.com/kaiCbs/Leetcode/blob/master/code/hard/first-missing-positive.py)
 - [48. Rotate Image](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/rotate-image.py)
+- [54. Spiral Matrix](https://github.com/kaiCbs/Leetcode/blob/master/code/medium/spiral-matrix.py)
 - [66. Plus One](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/plus-one.py)
 - [118. Pascal's Triangle](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/pascals-triangle.py)
 - [119. Pascal's Triangle II](https://github.com/kaiCbs/Leetcode/blob/master/code/easy/pascals-triangle-ii.py)
